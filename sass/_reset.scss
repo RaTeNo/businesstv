@@ -52,10 +52,14 @@ body{
 		size: 12px;
 	}
 	line-height:1.4;
+	background: #F5F5F5;
 }
 // resets
 a img,fieldset{
 	border:none;
+}
+.site{
+	background: #fff;
 }
 // common styles, these could be attached to any block with "@extend %wyswyg;"
 %wyswyg{

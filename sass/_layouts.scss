@@ -1,4 +1,14 @@
 // default layout
+.site,.footer__in{
+	width: 1200px;
+	margin: 0 auto;
+}
+.site{
+	margin-bottom: 80px;
+}
+.page{
+	padding: 30px 40px;
+}
 .l{
 	width: 100%;
 	display: inline-block;

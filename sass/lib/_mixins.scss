@@ -1,8 +1,8 @@
 // responsive example, edit or remove
-$break-small: 500px;
+$break-small: 1200px;
 $break-large: 1180px;
 @mixin respond-to($media) {
-	@if $media == pda {
+	@if $media == step1 {
 		// narrower than $width
 		@media only screen and (max-width: $break-small) { @content; }
 	}
@@ -62,6 +62,15 @@ $break-large: 1180px;
 	}
 	&::-webkit-input-placeholder {
 		color: $color;
+	}
+}
+
+@mixin placeholder() {
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-webkit-input-placeholder {
+		@content;
 	}
 }
 
