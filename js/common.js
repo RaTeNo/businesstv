@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
+	$('.header__toggle').click(function (e) {
+		$('body').toggleClass('is-withmenu');
+	});
 
+	$('.search__toggle').click(function (e) {
+		$('body').toggleClass('is-withsearch');
+	});
 
 
 

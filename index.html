@@ -25,7 +25,8 @@
 	<!-- END top -->
 	<!-- BEGIN header -->
 	<div class="header"><div class="header__in">
-		
+		<div class="header__toggle"><i></i></div>
+		<div class="search__toggle"><i></i></div>
 
 		
 
@@ -60,14 +61,16 @@
 					<li class="nav__4"><a href="#">громадський контроль</a></li>
 					<li class="nav__user"><a href="#"><i></i></a></li>
 				</ul>
-				<ul class="subnav">
-					<li><a href="#">Нерухомість</a></li>
-					<li><a href="#">Економічна політика</a></li>       
-					<li><a href="#">Малий бізнес</a></li>         
-					<li><a href="#">Компанії</a></li>              
-					<li><a href="#">Агро</a></li>                   
-					<li><a href="#">Фінанси</a></li>
-				</ul>
+				<div class="subnav">
+					<ul class="subnav__list">
+						<li><a href="#">Нерухомість</a></li>
+						<li><a href="#">Економічна політика</a></li>       
+						<li><a href="#">Малий бізнес</a></li>         
+						<li><a href="#">Компанії</a></li>              
+						<li><a href="#">Агро</a></li>                   
+						<li><a href="#">Фінанси</a></li>
+					</ul>
+				</div>
 			</div>
 			<!-- BEGIN marq -->
 			<div class="marq">
@@ -88,7 +91,7 @@
 
 		<!-- BEGIN logo -->
 		<div class="logo">
-			<a href="#" class="logo__pic"></a>
+			<a href="#" class="logo__pic">Business TV</a>
 		</div>
 		<!-- END logo -->
 		
@@ -97,7 +100,7 @@
 
 	<!-- BEGIN banner -->
 	<div class="topbanner">
-		<img src="http://placekitten.com/1200/75" alt="">
+		<img src="http://placedog.com/1200/75" alt="">
 	</div>
 	<!-- END banner -->
 
@@ -193,7 +196,7 @@
 					<h2 class="h2">Топ-новина</h2>
 					<div class="entry">
 						<div class="entry__pic">
-							<img src="http://placekitten.com/240/200" alt="">
+							<img src="http://placedog.com/240/200" alt="">
 						</div>
 						<div class="entry__content">
 							<div class="entry__published">25 червня 2013</div>
@@ -278,7 +281,7 @@
 							<h3 class="bycateg__title">Нерухомість</h3>
 							<div class="smallentry">
 							<div class="smallentry__pic">
-								<img src="http://placekitten.com/60/60" alt="">
+								<img src="http://placedog.com/60/60" alt="">
 							</div>
 							<div class="smallentry__content">
 								<div class="smallentry__meta"><div class="smallentry__time">15:32</div>	<div class="smallentry__metadata"><div class="comments"><i></i>15</div><div class="views"><i></i>36</div></div>   <i class="icon-play"></i></div>
@@ -298,7 +301,7 @@
 							<h3 class="bycateg__title">Нерухомість</h3>
 							<div class="smallentry">
 							<div class="smallentry__pic">
-								<img src="http://placekitten.com/60/60" alt="">
+								<img src="http://placedog.com/60/60" alt="">
 							</div>
 							<div class="smallentry__content">
 								<div class="smallentry__meta"><div class="smallentry__time">15:32</div>	<div class="smallentry__metadata"><div class="comments"><i></i>15</div><div class="views"><i></i>36</div></div>   <i class="icon-play"></i></div>
@@ -318,7 +321,7 @@
 							<h3 class="bycateg__title">Нерухомість</h3>
 							<div class="smallentry">
 							<div class="smallentry__pic">
-								<img src="http://placekitten.com/60/60" alt="">
+								<img src="http://placedog.com/60/60" alt="">
 							</div>
 							<div class="smallentry__content">
 								<div class="smallentry__meta"><div class="smallentry__time">15:32</div>	<div class="smallentry__metadata"><div class="comments"><i></i>15</div><div class="views"><i></i>36</div></div>   <i class="icon-play"></i></div>
@@ -338,7 +341,7 @@
 							<h3 class="bycateg__title">Нерухомість</h3>
 							<div class="smallentry">
 							<div class="smallentry__pic">
-								<img src="http://placekitten.com/60/60" alt="">
+								<img src="http://placedog.com/60/60" alt="">
 							</div>
 							<div class="smallentry__content">
 								<div class="smallentry__meta"><div class="smallentry__time">15:32</div>	<div class="smallentry__metadata"><div class="comments"><i></i>15</div><div class="views"><i></i>36</div></div>   <i class="icon-play"></i></div>
@@ -441,25 +444,27 @@
 				<li><a href="#">Енергетика</a></li>
 			</ul>
 		</div>
-		<div class="footer__sep"></div>
+
 		<!-- BEGIN footer__adres -->
-		<div class="footer__adres">
-			<h3>Контактна інформація:</h3>
-			<p>03057, м. Київ,<br>
-вул. В.Гетьмана, 6,<br>
-ТРЦ «Більшовик», блок «Б»</p>
-<p>Тел.: +38 (044) 364 37 70,<br>
-Факс: +38(044) 200 07 06</p>
-<p><a href="#">business.tv.ua@gmail.com</a></p>
+		<div class="footer__wrapb">
+			<div class="footer__adres">
+				<h3>Контактна інформація:</h3>
+				<p>03057, м. Київ,<br>
+				вул. В.Гетьмана, 6,<br>
+				ТРЦ «Більшовик», блок «Б»</p>
+				<p>Тел.: +38 (044) 364 37 70,<br>
+				Факс: +38(044) 200 07 06</p>
+				<p><a href="#">business.tv.ua@gmail.com</a></p>
+			</div>
+			<!-- END footer__adres -->
+			<!-- BEGIN footer__logos -->
+			<div class="footer__logos">
+				<a href="#" class="footer__logo1"></a><br>
+				<a href="#" class="footer__logo2"></a><br>
+				<a href="#" class="footer__logo3"></a><br>
+			</div>
+			<!-- END footer__logos -->
 		</div>
-		<!-- END footer__adres -->
-		<!-- BEGIN footer__logos -->
-		<div class="footer__logos">
-			<a href="#" class="footer__logo1"></a><br>
-			<a href="#" class="footer__logo2"></a><br>
-			<a href="#" class="footer__logo3"></a><br>
-		</div>
-		<!-- END footer__logos -->
 		<!-- BEGIN footer__copy -->
 		<div class="footer__copy">
 			<div class="footer__copyright"><i></i>ТОВ “МЕДІАПОІНТ”</div>

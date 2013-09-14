@@ -3,9 +3,9 @@ $step1: 1200px;
 $step2: 1000px;
 $step3: 940px;
 $step4: 830px;
-
-$step5: 600px;
-$steplast: 400px;
+$step5: 700px;
+$step6: 550px;
+$steplast: 401px;
 @mixin r($media:'step1') {
 	@if $media == step1 {
 		// narrower than $width
@@ -22,6 +22,18 @@ $steplast: 400px;
 	@else if $media == step4 {
 		// wider than $width
 		@media only screen and (max-width: $step4) { @content; }
+	}
+	@else if $media == step5 {
+		// wider than $width
+		@media only screen and (max-width: $step5) { @content; }
+	}
+	@else if $media == step6 {
+		// wider than $width
+		@media only screen and (max-width: $step6) { @content; }
+	}
+	@else if $media == steplast {
+		// wider than $width
+		@media only screen and (max-width: $steplast) { @content; }
 	}
 }
 // retina bg
