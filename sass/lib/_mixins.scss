@@ -1,14 +1,27 @@
 // responsive example, edit or remove
-$break-small: 1200px;
-$break-large: 1180px;
-@mixin respond-to($media) {
+$step1: 1200px;
+$step2: 1000px;
+$step3: 940px;
+$step4: 830px;
+
+$step5: 600px;
+$steplast: 400px;
+@mixin r($media:'step1') {
 	@if $media == step1 {
 		// narrower than $width
-		@media only screen and (max-width: $break-small) { @content; }
+		@media only screen and (max-width: $step1) { @content; }
 	}
-	@else if $media == wide {
+	@else if $media == step2 {
 		// wider than $width
-		@media only screen and (min-width: $break-large) { @content; }
+		@media only screen and (max-width: $step2) { @content; }
+	}
+	@else if $media == step3 {
+		// wider than $width
+		@media only screen and (max-width: $step3) { @content; }
+	}
+	@else if $media == step4 {
+		// wider than $width
+		@media only screen and (max-width: $step4) { @content; }
 	}
 }
 // retina bg
@@ -17,9 +30,9 @@ $break-large: 1180px;
 		@content;
 	}
 }
-@mixin r($media){
-	@include respond-to($media);
-}
+// @mixin r($media:'step1'){
+// 	@include respond-to($media);
+// }
 
 // ROTATE
 @mixin rotate($deg: 0, $m11: 0, $m12: 0, $m21: 0, $m22: 0) {
