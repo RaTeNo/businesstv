@@ -1,0 +1,49 @@
+// default layout
+.site,.footer__in
+	width: 1200px
+	margin: 0 auto
+	+r(step1)
+		width: auto
+
+.site
+	margin-bottom: 80px
+
+.page
+	padding: 30px 40px
+	+r(step2)
+		padding: 30px 10px
+
+	+r(step5)
+		padding: 20px 44px 30px 44px
+
+.l
+	width: 100%
+	display: inline-block
+	.l-col1
+		float: left
+		width: 23%
+		margin-right: 5%
+		+r(step2)
+			float: right
+			width: 30% 
+			margin-right: 0 
+		+r(step5)
+			float: none
+			width: auto 
+			display: none
+		&.l-col1_alt
+			+r(step5)
+				display: block 
+	.l-col2
+		float: left
+		width: 44%
+		+r(step2)
+			width: 66% 
+		+r(step5)
+			float: none
+			width: auto 
+	.l-col3
+		float: right
+		width: 21%
+		+r(step2)
+			display: none
