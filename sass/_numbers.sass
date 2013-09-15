@@ -62,7 +62,7 @@
 		margin: 0 30px 40px 30px
 		font-size: 24px  
 		color: #333 
-	.poll__results
+	.poll__results,.poll__qs
 		width: 80%
 		margin: 0 auto  
 	.poll__result
@@ -89,7 +89,31 @@
 			font-size: 16px 
 			top: -2px
 			line-height: 1  
+	.poll__q
+		margin-bottom: 10px
+		label
+			font-size: 18px 
+			display: block
+		input
+			vertical-align: middle
+			margin-right: 10px 
+			position: relative
+			top: -2px 
 			
+	.poll__bottom
+		margin-top: 40px 
+		text-align: center
+		.poll__submit
+			@extend %blackbutton
+			margin-right: 20px 
+			font-size: 18px 
+			padding: 10px  20px
+		.poll__viewresults
+			text-decoration: none
+			color: #bb141a
+			font-size: 16px  
+			&:hover	
+				text-decoration: underline
 	.poll__whole
 		margin-top: 40px 
 		font-size: 16px 
@@ -101,7 +125,7 @@
 	.bigdigit__number
 		font-size: 123px 
 		+med
-		margin-bottom: 30px 
+		margin-bottom: 20px 
 		+r(step1)
 			font-size: 90px 
 		+r(step3)

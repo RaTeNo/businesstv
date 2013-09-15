@@ -254,9 +254,9 @@ a img, fieldset { border: none; }
 .h2 { font-size: 15px; font-weight: normal; background: #b61622; text-transform: uppercase; color: white; padding: 6px 10px 6px 16px; padding-left: 16px; margin-bottom: 20px; }
 .b_news .h2 { margin-bottom: 17px; }
 
-.vote .vote__button { font-size: 14px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3b3b3b), color-stop(100%, #151515)); background-image: -webkit-linear-gradient(#3b3b3b, #151515); background-image: -moz-linear-gradient(#3b3b3b, #151515); background-image: -o-linear-gradient(#3b3b3b, #151515); background-image: -ms-linear-gradient(#3b3b3b, #151515); background-image: linear-gradient(#3b3b3b, #151515); box-shadow: 1px 2px 0 #cccccc; text-decoration: none; height: 25px; line-height: 25px; padding: 0 18px; color: white; display: inline-block; cursor: pointer; border-style: none; }
-.vote .vote__button:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #363636), color-stop(100%, #363636)); background-image: -webkit-linear-gradient(#363636, #363636); background-image: -moz-linear-gradient(#363636, #363636); background-image: -o-linear-gradient(#363636, #363636); background-image: -ms-linear-gradient(#363636, #363636); background-image: linear-gradient(#363636, #363636); box-shadow: 1px 2px 0 #a3a3a3; }
-.vote .vote__button:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #232323), color-stop(100%, #3d3d3d)); background-image: -webkit-linear-gradient(#232323, #3d3d3d); background-image: -moz-linear-gradient(#232323, #3d3d3d); background-image: -o-linear-gradient(#232323, #3d3d3d); background-image: -ms-linear-gradient(#232323, #3d3d3d); background-image: linear-gradient(#232323, #3d3d3d); position: relative; top: 2px; left: 1px; box-shadow: none; }
+.vote .vote__button, .poll .poll__bottom .poll__submit { font-size: 14px; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3b3b3b), color-stop(100%, #151515)); background-image: -webkit-linear-gradient(#3b3b3b, #151515); background-image: -moz-linear-gradient(#3b3b3b, #151515); background-image: -o-linear-gradient(#3b3b3b, #151515); background-image: -ms-linear-gradient(#3b3b3b, #151515); background-image: linear-gradient(#3b3b3b, #151515); box-shadow: 1px 2px 0 #cccccc; text-decoration: none; height: 25px; line-height: 25px; padding: 0 18px; color: white; display: inline-block; cursor: pointer; border-style: none; }
+.vote .vote__button:hover, .poll .poll__bottom .poll__submit:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #363636), color-stop(100%, #363636)); background-image: -webkit-linear-gradient(#363636, #363636); background-image: -moz-linear-gradient(#363636, #363636); background-image: -o-linear-gradient(#363636, #363636); background-image: -ms-linear-gradient(#363636, #363636); background-image: linear-gradient(#363636, #363636); box-shadow: 1px 2px 0 #a3a3a3; }
+.vote .vote__button:active, .poll .poll__bottom .poll__submit:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #232323), color-stop(100%, #3d3d3d)); background-image: -webkit-linear-gradient(#232323, #3d3d3d); background-image: -moz-linear-gradient(#232323, #3d3d3d); background-image: -o-linear-gradient(#232323, #3d3d3d); background-image: -ms-linear-gradient(#232323, #3d3d3d); background-image: linear-gradient(#232323, #3d3d3d); position: relative; top: 2px; left: 1px; box-shadow: none; }
 
 .comments, .views { font-size: 12px; color: #878787; line-height: 1; vertical-align: middle; display: inline-block; text-decoration: none; }
 .comments i, .views i { margin-right: 3px; display: inline-block; position: relative; }
@@ -379,16 +379,23 @@ a img, fieldset { border: none; }
 
 .poll .poll__date { margin-bottom: 38px; font-size: 14px; text-align: center; color: #666666; }
 .poll .poll__title { text-align: center; margin: 0 30px 40px 30px; font-size: 24px; color: #333333; }
-.poll .poll__results { width: 80%; margin: 0 auto; }
+.poll .poll__results, .poll .poll__qs { width: 80%; margin: 0 auto; }
 .poll .poll__result { margin-bottom: 20px; }
 .poll .poll__result strong { font-size: 18px; font-weight: normal; display: block; color: #222222; }
 .poll .poll__result .poll__stat { position: relative; height: 10px; background: #f0f2f2; }
 .poll .poll__result .poll__fill { height: 10px; background: #242424; display: block; }
 .poll .poll__result .poll__number { width: 30px; position: absolute; right: -35px; text-align: left; font-family: "pfmedium", "arial narrow", sans-serif; font-size: 16px; top: -2px; line-height: 1; }
+.poll .poll__q { margin-bottom: 10px; }
+.poll .poll__q label { font-size: 18px; display: block; }
+.poll .poll__q input { vertical-align: middle; margin-right: 10px; position: relative; top: -2px; }
+.poll .poll__bottom { margin-top: 40px; text-align: center; }
+.poll .poll__bottom .poll__submit { margin-right: 20px; font-size: 18px; padding: 10px 20px; }
+.poll .poll__bottom .poll__viewresults { text-decoration: none; color: #bb141a; font-size: 16px; }
+.poll .poll__bottom .poll__viewresults:hover { text-decoration: underline; }
 .poll .poll__whole { margin-top: 40px; font-size: 16px; color: #666666; text-align: center; }
 
 .bigdigit { text-align: center; color: #333333; }
-.bigdigit .bigdigit__number { font-size: 123px; font-family: "pfmedium", "arial narrow", sans-serif; margin-bottom: 30px; }
+.bigdigit .bigdigit__number { font-size: 123px; font-family: "pfmedium", "arial narrow", sans-serif; margin-bottom: 20px; }
 @media only screen and (max-width: 1200px) { .bigdigit .bigdigit__number { font-size: 90px; } }
 @media only screen and (max-width: 940px) { .bigdigit .bigdigit__number { font-size: 70px; } }
 .bigdigit .bigdigit__text { font-size: 22px; }
