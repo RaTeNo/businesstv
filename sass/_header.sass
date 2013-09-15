@@ -206,25 +206,7 @@
 				color: #bb141a
 				margin-left: 8px
 				text-decoration: none
-	.socials
-		list-style: none
-		float: left
-		margin-left: 4px
-		+r(step5)
-			display: none
-
-		li
-			float: left
-		a
-			float: left
-			margin-right: 10px
-			width: 23px 
-			height: 23px 
-		@each $s in face, twit, gplu, yout, vime, feed
-			.socials__#{$s}
-				+si(#{$s})
-				&:hover
-					+si(#{$s}h)
+	
 	.lang
 		font-size: 14px
 		text-transform: uppercase
@@ -256,7 +238,25 @@
 		.lang
 			float: right
 			margin-right: 47px
+.socials
+	list-style: none
+	float: left
+	margin-left: 4px
+	+r(step5)
+		display: none
 
+	li
+		float: left
+	a
+		float: left
+		margin-right: 10px
+		width: 23px 
+		height: 23px 
+	@each $s in face, twit, gplu, yout, vime, feed
+		.socials__#{$s}
+			+si(#{$s})
+			&:hover
+				+si(#{$s}h)
 .search
 	width: 277px
 	position: relative
@@ -301,14 +301,7 @@
 		+r(step5)
 			right: 45px
 
-body
-	+r(step5)
-		+transition(all 0.3s ease-in-out)
 
-	&.is-withmenu
-		+r(step5)
-			overflow: hidden
-			+translate3d(200px, 0, 0)
 
 .nav
 	height: 43px
@@ -340,7 +333,7 @@ body
 	.nav__1
 		width: 140px
 		+r(step3)
-			width: 17.5%
+			width: 18%
 	.nav__2
 		width: 160px
 		+r(step3)
@@ -461,14 +454,15 @@ body
 
 .topbanner
 	background: #000
-	width: 100%
-	height: 20px
+	height: 75px
 	overflow: hidden
+	position: relative
 	+r(step5)
 		margin: 0 38px
-		overflow: hidden
 		width: auto
 
 	img
 		display: block
-		width: 100%
+		position: absolute
+		left: 50%
+		margin-left: -620px  
