@@ -1,0 +1,113 @@
+.addcomment
+	padding: 8px 13px
+	background: #F0F2F2  
+	+med
+	font-size: 18px 
+	color: #333333
+	margin-bottom: 20px 
+	strong
+		font-weight: normal
+	a
+		text-decoration: none
+		color: #910709
+		margin-left: 6px 
+		i
+			display: inline-block
+			margin-right: 5px 
+			vertical-align: middle
+			+s(addcomment)
+.likes
+	margin: 20px 0
+
+.slider
+	position: relative
+	margin-bottom: 20px 
+	.slider__items
+		width: 90%
+		margin: 0 auto  
+		position: relative
+	.slider__next,.slider__prev
+		position: absolute
+		top: 50% 
+		cursor: pointer
+		margin-top: -10px 
+		z-index: 100 
+	.slider__next
+		+s(slider__next)
+		right: 0 
+	.slider__prev
+		+s(slider__prev)
+		left: 0 
+	.slider__item
+		width: 100% 
+		margin: 0 auto 
+.slide
+	padding: 0 30px 
+	.slide__type
+		font-size: 14px 
+		color: #777777 
+		text-transform: uppercase
+		position: absolute
+		left: 0
+		top: 0  
+		
+.poll
+	.poll__date
+		margin-bottom: 38px 
+		font-size: 14px 
+		text-align: center
+		color: #666 
+	.poll__title
+		text-align: center
+		margin: 0 30px 40px 30px
+		font-size: 24px  
+		color: #333 
+	.poll__results
+		width: 80%
+		margin: 0 auto  
+	.poll__result
+		margin-bottom: 20px 
+		strong
+			font-size: 18px 
+			font-weight: normal
+			display: block
+			color: #222222 
+		.poll__stat
+			position: relative
+			height: 10px 
+			background: #F0F2F2 
+		.poll__fill
+			height: 10px 
+			background: #242424
+			display: block 
+		.poll__number
+			width: 30px 
+			position: absolute
+			right: -35px 
+			text-align: left
+			+med
+			font-size: 16px 
+			top: -2px
+			line-height: 1  
+			
+	.poll__whole
+		margin-top: 40px 
+		font-size: 16px 
+		color: #666666 
+		text-align: center
+.bigdigit
+	text-align: center
+	color: #333 
+	.bigdigit__number
+		font-size: 123px 
+		+med
+		margin-bottom: 30px 
+		+r(step1)
+			font-size: 90px 
+		+r(step3)
+			font-size: 70px 
+	.bigdigit__text
+		font-size: 22px 
+		+r(step2)
+			font-size: 16px 
+		

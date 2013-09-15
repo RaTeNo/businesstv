@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/jquery.js"></script>
+	<script src="http://malsup.github.io/jquery.cycle2.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -111,13 +112,112 @@
 		<div class="l1">
 			<!-- BEGIN l-col1 -->
 			<div class="l-col1">
-				
+
+				<!-- BEGIN slider -->
+				<div class="slider">
+					<div class="slider__next" id="next"></div>
+					<div class="slider__prev" id="prev"></div>
+					<div class="slider__items cycle-slideshow"
+    data-cycle-fx="scrollHorz"
+    data-cycle-timeout="0"
+    data-cycle-prev="#prev"
+    data-cycle-next="#next"
+    data-cycle-slides="> div"
+				    >
+						<div class="slider__item">
+							<div class="slide">
+								<div class="slide__type">Опитування</div>
+								<div class="poll">
+									<div class="poll__date">18 квітня</div>
+									<div class="poll__title">Как власти проявили себя во время ликвидации 
+последствий  внезапного экстремального снегопада?</div>
+									<div class="poll__results">
+										<div class="poll__result">
+											<strong>Показали полную беспомощность.</strong>
+											<div class="poll__stat">
+												<div class="poll__fill" style="width:70%"></div>
+												<div class="poll__number">50%</div>
+											</div>
+										</div>
+										
+										<div class="poll__result">
+											<strong>Они не всесильны, нужна божья помощь.</strong>
+											<div class="poll__stat">
+												<div class="poll__fill" style="width:70%"></div>
+												<div class="poll__number">50%</div>
+											</div>
+										</div>
+										<div class="poll__result">
+											<strong>Показали полную беспомощность.</strong>
+											<div class="poll__stat">
+												<div class="poll__fill" style="width:70%"></div>
+												<div class="poll__number">50%</div>
+											</div>
+										</div>
+										
+										<div class="poll__result">
+											<strong>Они не всесильны, нужна божья помощь.</strong>
+											<div class="poll__stat">
+												<div class="poll__fill" style="width:70%"></div>
+												<div class="poll__number">50%</div>
+											</div>
+										</div>
+									</div>
+									<div class="poll__whole">Всього проголосувало 553 людини</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider__item">
+							<div class="slide">
+								<div class="slide__type">цифра дня</div>
+								<div class="bigdigit">
+									<div class="bigdigit__number">100 500 € </div>
+									<div class="bigdigit__text">
+										Во столько раз квартира дочери Сергея Собянина стоит больше 10-летнего заработка семьи Собяниных. 
+По подсчетам Алексея Навального, максимальная сумма совокупного дохода Сергея Собянина и его супруги к моменту покупки квартиры в 2010 году не могла превышать 27 млн. рублей. При этом стоимость квартиры общей площадью 
+308 кв. м, составляет примерно 173 млн. рублей. 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END slider -->
+
+
+
+				<div class="likes"><img src="img/soc.png" alt=""></div>
+				<div class="addcomment">
+					<strong>Комментариев пока нет. </strong>
+					<a href="#"><i></i>Оставьте свой.</a>
+				</div>
 			</div>
 			<!-- END l-col1 -->
 
 			<!-- BEGIN l-col2 -->
 			<div class="l-col2">
 				
+
+				<div class="b">
+					<h2 class="h2">Зараз в ефірі</h2>
+					<!-- BEGIN video -->
+					<a href='#' class="video">
+						<div class="video__pic">
+							<img src="img/video.png" alt="">
+						</div>
+						<div class="video__content">
+							<div class="video__icon"></div>
+							<div class="video__title">СМИ рассказали о тайных тренировках парагвайского футболиста</div>
+							<div class="comments"><i></i>15</div><div class="views"><i></i>36</div>
+							<div class="video__summary">За прошлый год состояние богатейшего жителя Азии увеличилось на $5,5 млрд. Основа его богатства.</div>
+						</div>
+					</a>
+					<!-- END video -->
+				</div>
+
+				<div class="banner banner__240">
+					<img src="img/banner.jpg" alt="">
+				</div>
 			</div>
 			<!-- END l-col2 -->
 		</div>
