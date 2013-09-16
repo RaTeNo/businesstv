@@ -331,7 +331,7 @@ a img, fieldset { border: none; }
 .vote .vote__options label { padding-left: 29px; display: block; position: relative; cursor: pointer; }
 .vote .vote__options label input { position: absolute; left: 2px; top: 1px; }
 
-.video { position: relative; overflow: hidden; display: block; }
+.video { position: relative; overflow: hidden; display: block; text-decoration: none; }
 .video .video__pic img { display: block; width: 100%; }
 .video .video__content { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); padding: 6px 6px 6px 51px; color: white; font-size: 14px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .video .video__icon { background: url('../img/icons-s6324f96763.png') 0 -1278px no-repeat; width: 26px; height: 26px; position: absolute; left: 11px; top: 14px; }
