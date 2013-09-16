@@ -255,6 +255,8 @@ a img, fieldset { border: none; }
 .sidenav .sidenav__lang a { border-bottom: 1px solid #ebebeb; color: #a3a3a3; }
 .sidenav .sidenav__lang a.is-active { color: #e51b23; font-family: "pfmedium", "arial narrow", sans-serif; }
 
+.h1 { font-size: 24px; font-weight: bold; font-family: "pfmedium", "arial narrow", sans-serif; text-transform: uppercase; margin-bottom: 28px; color: #910709; }
+
 .h2 { font-size: 15px; font-weight: normal; background: #b61622; text-transform: uppercase; color: white; padding: 6px 10px 6px 16px; padding-left: 16px; margin-bottom: 20px; }
 .b_news .h2 { margin-bottom: 17px; }
 
@@ -434,3 +436,12 @@ a img, fieldset { border: none; }
 .videospage .more { clear: both; margin-bottom: 20px; }
 
 .clr { clear: both; height: 1px; }
+
+.position { margin-bottom: 28px; color: #333333; font-size: 16px; }
+.position .position__title { font-weight: normal; font-size: 23px; text-decoration: none; margin-bottom: 14px; }
+.position .position__title a { text-decoration: none; }
+.position .position__title a:hover { text-decoration: underline; }
+.position p { margin-bottom: 10px; }
+.position .position__more { text-decoration: none; color: #e81b23; font-size: 12px; }
+.position .position__more:hover { text-decoration: underline; }
+.position .position__more:after { content: " "; display: inline-block; background: url('../img/icons-s6324f96763.png') 0 -1539px no-repeat; width: 6px; height: 8px; margin-left: 5px; vertical-align: middle; }
