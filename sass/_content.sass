@@ -161,6 +161,7 @@
 
 .entry
 	overflow: hidden
+	width: 100% 
 	.entry__pic
 		float: left
 		margin-right: 20px
@@ -199,6 +200,18 @@
 			text-decoration: none
 			&:hover
 				text-decoration: underline
+.cycle-pager
+	text-align: center
+	padding-top: 20px 
+	span
+		display: inline-block
+		+s(page)
+		margin-right: 13px 
+		text-indent: -1983em 
+		overflow: hidden
+		cursor: pointer
+	.cycle-pager-active
+		+s(pageactive)
 		
 
 .b_news
