@@ -9,6 +9,12 @@
 	margin-bottom: 20px
 	.b_news &
 		margin-bottom: 17px
+.bc
+	font-size: 14px 
+	text-transform: uppercase
+	+med
+	color: #777777 
+	margin-bottom: 35px 
 %blackbutton
 	font-size: 14px
 	+background-image(linear-gradient(#3B3B3B, #151515))
@@ -282,6 +288,32 @@
 		.video__summary
 			display: block
 			margin-top: 8px 
+	&.video_big
+		.video__title
+			font-size: 18px 
+			font-weight: bold
+		.video__published
+			color: #8c8c8c
+			display: inline-block
+			margin-right: 20px  
+			font-size: 15px 
+			vertical-align: middle
+		.video__content
+			padding-left: 83px 
+			padding-top: 12px 
+			padding-bottom: 12px 
+		.video__icon	
+			+s(videobig)
+			top: 50%
+			left: 14px 
+			margin-top: -24px 
+		&.is-active, &:hover
+			.video__content
+				padding: 30px 
+			.video__title
+				display: block
+				margin-bottom: 5px 
+				font-size: 30px 
 .videos
 	margin-right: -4% 
 	overflow: hidden
@@ -360,7 +392,7 @@
 	blockquote
 		background: #F5F5F5 
 		padding: 15px 10px
-		font-size: 18px  
+		font-size: 16px  
 		font-style: italic
 		font-family: "Times New Roman",serif
 		cite
