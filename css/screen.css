@@ -280,12 +280,13 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .l2 .l-col3 { float: right; width: 21%; }
 @media only screen and (max-width: 700px) { .l2 .l-col3 { display: none; } }
 .l2 .l-col3 .video { margin: 20px 0; }
-.l2 .l-coltop { width: 75.9%; position: relative; left: -20px; padding-left: 20px; }
+.l2 .l-coltop { width: 75.9%; position: relative; }
 @media only screen and (max-width: 700px) { .l2 .l-coltop { width: auto; } }
 .l2 .l-col21 { float: left; width: 65%; }
 .l2 .l-col22 { float: right; width: 30%; }
 @media only screen and (max-width: 1000px) { .l2.l2_alt .l-col1 { display: none; } }
-@media only screen and (max-width: 700px) { .l2.l2_alt .l-col3 { width: 100%; display: block; float: none; } }
+.l2.l2_alt .l-col3 { margin-top: -75px; }
+@media only screen and (max-width: 700px) { .l2.l2_alt .l-col3 { width: 100%; display: block; float: none; margin: 0; clear: both; padding-top: 20px; } }
 
 @media only screen and (max-width: 700px) { body { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; } }
 @media only screen and (max-width: 700px) { body.is-withmenu { -webkit-transform: translate3d(240px, 0, 0); -moz-transform: translate3d(240px, 0, 0); -ms-transform: translate3d(240px, 0, 0); -o-transform: translate3d(240px, 0, 0); transform: translate3d(240px, 0, 0); } }
@@ -618,8 +619,9 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .expert .expert__tags a { color: #878787; text-decoration: none; }
 .expert .expert__tags a:hover { text-decoration: underline; }
 
-.choosedate { background: #333333; font-size: 18px; text-transform: uppercase; height: 45px; line-height: 45px; color: white; padding: 0 0 0 29px; }
-.choosedate i { background: url('../img/icons-s0cf38bcea1.png') 0 -1580px no-repeat; width: 15px; height: 15px; display: inline-block; vertical-align: middle; margin-left: 5px; }
+.choosedate { background: #333333; font-size: 18px; text-transform: uppercase; height: 45px; line-height: 45px; color: white; padding: 0 0 0 29px; margin-bottom: 30px; margin-left: -20px; }
+@media only screen and (max-width: 940px) { .choosedate { margin-left: 0; } }
+.choosedate i { background: url('../img/icons-s0cf38bcea1.png') 0 -1580px no-repeat; width: 15px; height: 15px; display: inline-block; vertical-align: middle; position: relative; top: -1px; margin-left: 5px; cursor: pointer; }
 
 .program .actual-program { float: left; }
 @media only screen and (max-width: 1200px) { .program .actual-program { float: none; } }
