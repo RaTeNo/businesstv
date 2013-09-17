@@ -262,10 +262,12 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 @media only screen and (max-width: 700px) { .l1 .l-col1 { float: none; width: auto; } }
 .l1 .l-col2 { width: 21%; float: right; }
 @media only screen and (max-width: 700px) { .l1 .l-col2 { float: none; width: auto; } }
-@media only screen and (max-width: 700px) { .l1 .l-col2 .subcol1 { float: left; width: 48%; } }
-@media only screen and (max-width: 550px) { .l1 .l-col2 .subcol1 { float: none; width: auto; } }
-@media only screen and (max-width: 700px) { .l1 .l-col2 .subcol2 { float: right; width: 48%; } }
-@media only screen and (max-width: 550px) { .l1 .l-col2 .subcol2 { float: none; width: auto; } }
+
+@media only screen and (max-width: 700px) { .subcol1 { float: left; width: 48%; } }
+@media only screen and (max-width: 550px) { .subcol1 { float: none; width: auto; } }
+
+@media only screen and (max-width: 700px) { .subcol2 { float: right; width: 48%; } }
+@media only screen and (max-width: 550px) { .subcol2 { float: none; width: auto; } }
 
 .l2 { width: 100%; display: inline-block; }
 .l2 .l-col1 { float: left; margin-left: -40px; width: 13.5%; }
@@ -276,6 +278,10 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .l2 .l-col3 { float: right; width: 21%; }
 @media only screen and (max-width: 700px) { .l2 .l-col3 { display: none; } }
 .l2 .l-col3 .video { margin: 20px 0; }
+.l2 .l-coltop { width: 75.9%; }
+@media only screen and (max-width: 700px) { .l2 .l-coltop { width: auto; } }
+@media only screen and (max-width: 1000px) { .l2.l2_alt .l-col1 { display: none; } }
+@media only screen and (max-width: 700px) { .l2.l2_alt .l-col3 { width: 100%; display: block; float: none; } }
 
 @media only screen and (max-width: 700px) { body { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; } }
 @media only screen and (max-width: 700px) { body.is-withmenu { -webkit-transform: translate3d(240px, 0, 0); -moz-transform: translate3d(240px, 0, 0); -ms-transform: translate3d(240px, 0, 0); -o-transform: translate3d(240px, 0, 0); transform: translate3d(240px, 0, 0); } }

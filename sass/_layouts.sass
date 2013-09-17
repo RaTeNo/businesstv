@@ -86,20 +86,20 @@ body
 		+r(step5)
 			float: none
 			width: auto 
-		.subcol1
-			+r(step5)
-				float: left
-				width: 48%
-			+r(step6)
-				float: none
-				width: auto 
-		.subcol2
-			+r(step5)
-				float: right
-				width: 48%
-			+r(step6)
-				float: none
-				width: auto 
+.subcol1
+	+r(step5)
+		float: left
+		width: 48%
+	+r(step6)
+		float: none
+		width: auto 
+.subcol2
+	+r(step5)
+		float: right
+		width: 48%
+	+r(step6)
+		float: none
+		width: auto 
 
 .l2
 	width: 100% 
@@ -128,3 +128,16 @@ body
 			display: none
 		.video
 			margin: 20px 0
+	.l-coltop
+		width: 75.9% 
+		+r(step5)
+			width: auto 
+	&.l2_alt
+		.l-col1
+			+r(step2)
+				display: none
+		.l-col3
+			+r(step5)
+				width: 100%
+				display: block
+				float: none
