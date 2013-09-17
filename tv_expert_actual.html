@@ -9,14 +9,14 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/common.js"></script>
 </head>
-<body>
+<body class="is-channel">
 <!-- BEGIN  site-->
 <div class="site">
 	<!-- BEGIN top -->
 	<div class="top">
 		<ul class="top__nav">
-			<li><a href="#" class="is-active">Business TV</a></li>
-			<li><a href="#">Канал</a></li>
+			<li><a href="#">Business TV</a></li>
+			<li><a href="#" class="is-active">Канал</a></li>
 		</ul>
 		<div class="top__links">
 			<a href="#">Новини</a>|<a href="#">Бізнес-форум</a>|<a href="#">Редакція</a>|<a href="#">Підписка</a>
@@ -55,10 +55,38 @@
 			<!-- END header__top -->
 			<div class="header__nav">
 				<ul class="nav">
-					<li class="nav__1"><a href="#">Новини</a></li>
-					<li class="nav__2"><a href="#">топ відео</a></li>
-					<li class="nav__3"><a href="#">події</a></li>
-					<li class="nav__4"><a href="#">громадський контроль</a></li>
+					<li class="nav__1"><a href="#">НОВИНИ</a></li>
+					<li class="nav__2"><a href="#">TV-програма</a></li>
+					<li class="nav__3"><a href="#">Передачі</a>
+						<div class="nav__drop">
+							<ul>
+								<li><a href="#">business news</a></li>
+								<li><a href="#">спорт</a></li>
+								<li><a href="#">прес-огляд</a></li>
+								<li><a href="#">інтернет-огляд</a></li>
+								<li><a href="#">афіша</a></li>
+								<li><a href="#">психологія </a></li>
+								<li><a href="#">грошей</a></li>
+								<li><a href="#">pin-код</a></li>
+								<li><a href="#">діалоги</a></li>
+								<li><a href="#">філософія<br>трейдингу</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">бізнес-чемпіони</a></li>
+								<li><a href="#">майстер-клас</a></li>
+								<li><a href="#">новини </a></li>
+								<li><a href="#">компаній</a></li>
+								<li><a href="#">бізнес-погляд</a></li>
+								<li><a href="#">актуальна <br>тема</a></li>
+								<li><a href="#">бізнес-факти</a></li>
+								<li><a href="#">ітого</a></li>
+								<li><a href="#">своя справа</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav__4"><a href="#">Ведучі</a></li>
+					<li class="nav__5"><a href="#">питання до експерта</a></li>
+					<li class="nav__6"><a href="#">про нас</a></li>
 					<li class="nav__user"><a href="#"><i></i></a></li>
 				</ul>
 				<div class="subnav">
@@ -117,7 +145,39 @@
 
 			<!-- BEGIN l-col2 -->
 			<div class="l-col2">
-				
+				<!-- BEGIN subcol1 -->
+				<div class="subcol1">
+					<div class="b">
+						<h2 class="h2">Зараз в ефірі</h2>
+						<!-- BEGIN video -->
+						<a href='#' class="video">
+							<div class="video__pic">
+								<img src="img/video.png" alt="">
+							</div>
+							<div class="video__content">
+								<div class="video__icon"></div>
+								<div class="video__title">СМИ рассказали о тайных тренировках парагвайского футболиста</div>
+								<div class="comments"><i></i>15</div><div class="views"><i></i>36</div>
+								<div class="video__summary">За прошлый год состояние богатейшего жителя Азии увеличилось на $5,5 млрд. Основа его богатства.</div>
+							</div>
+						</a>
+						<!-- END video -->
+					</div>
+				</div>
+				<!-- END subcol1 -->
+				<!-- BEGIN subcol2 -->
+				<div class="subcol2">
+					<!-- BEGIN b -->
+					<div class="b b_social">
+						<h2 class="h2">Ми у соціальних мережах</h2>
+						<div class="b__content">
+							<img src="img/social.jpg" alt="">
+						</div>
+					</div>
+					<!-- END b -->
+
+				</div>
+				<!-- end subcol -->
 			</div>
 			<!-- END l-col2 -->
 		</div>
@@ -201,10 +261,6 @@
 	</div>
 	<ul class="sidenav__nav">
 		<li><a href="#">НОВИНИ</a></li>
-		<li><a href="#">ТОП ВІДЕО </a></li>
-		<li><a href="#">ПОДІЇ </a></li>
-		<li><a href="#">ГРОМАДСЬКИЙ КОНТРОЛЬ</a></li>
-	<!-- 	<li><a href="#">НОВИНИ</a></li>
 		<li><a href="#">tv-програма</a></li>
 		<li><a href="#" class="parent is-open">передачі</a>
 			<ul>
@@ -229,7 +285,7 @@
 		</li>
 		<li><a href="#">ведучі</a></li>
 		<li><a href="#">питання до експерта</a></li>
-		<li><a href="#">про нас</a></li> -->
+		<li><a href="#">про нас</a></li>
 	</ul>
 	<ul class="socials">
 		<li><a href="#" class="socials__face"></a></li>
