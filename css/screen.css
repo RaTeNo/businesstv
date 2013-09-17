@@ -106,24 +106,46 @@ a img, fieldset { border: none; }
 
 @media only screen and (max-width: 700px) { .is-withsearch .search { right: 45px; } }
 
-.nav { height: 43px; background: #c9001c; font-size: 17px; list-style: none; }
+.nav { height: 43px; background: #c9001c; font-size: 17px; list-style: none; position: relative; z-index: 200; }
 @media only screen and (max-width: 830px) { .nav { font-size: 14px; } }
 @media only screen and (max-width: 700px) { .nav { display: none; } }
-.nav li { float: left; }
+@media only screen and (max-width: 940px) { .is-channel .nav { font-size: 14px; } }
+@media only screen and (max-width: 830px) { .is-channel .nav { font-size: 12px; } }
+.nav li { float: left; position: relative; }
 .nav a { color: white; text-transform: uppercase; text-decoration: none; float: left; height: 43px; line-height: 43px; border-right: 1px solid #ae0011; width: 100%; text-align: center; }
 .nav a:hover { background: #a60516; text-decoration: underline; }
+.nav > li:hover > a { background: #a60516; }
 .nav .nav__1 { width: 140px; }
 @media only screen and (max-width: 940px) { .nav .nav__1 { width: 18%; } }
+.is-channel .nav .nav__1 { width: 92px; }
+@media only screen and (max-width: 940px) { .is-channel .nav .nav__1 { width: 11%; } }
 .nav .nav__2 { width: 160px; }
 @media only screen and (max-width: 940px) { .nav .nav__2 { width: 20%; } }
+.is-channel .nav .nav__2 { width: 131px; }
+@media only screen and (max-width: 940px) { .is-channel .nav .nav__2 { width: 16%; } }
 .nav .nav__3 { width: 125px; }
 @media only screen and (max-width: 940px) { .nav .nav__3 { width: 15%; } }
+.is-channel .nav .nav__3 { width: 103px; }
+@media only screen and (max-width: 940px) { .is-channel .nav .nav__3 { width: 13%; } }
 .nav .nav__4 { width: 280px; }
 @media only screen and (max-width: 940px) { .nav .nav__4 { width: 35%; } }
+.is-channel .nav .nav__4 { width: 84px; }
+@media only screen and (max-width: 940px) { .is-channel .nav .nav__4 { width: 10%; } }
+.is-channel .nav .nav__5 { width: 200px; }
+@media only screen and (max-width: 940px) { .is-channel .nav .nav__5 { width: 25%; } }
+.is-channel .nav .nav__6 { width: 95px; }
+@media only screen and (max-width: 940px) { .is-channel .nav .nav__6 { width: 13%; } }
 .nav .nav__user { width: 95px; float: right; }
 @media only screen and (max-width: 940px) { .nav .nav__user { width: 12%; } }
 .nav .nav__user a { border-right: none; display: block; }
+.is-channel .nav .nav__user a { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383838), color-stop(100%, #202020)); background-image: -webkit-linear-gradient(#383838, #202020); background-image: -moz-linear-gradient(#383838, #202020); background-image: -o-linear-gradient(#383838, #202020); background-image: -ms-linear-gradient(#383838, #202020); background-image: linear-gradient(#383838, #202020); }
 .nav .nav__user i { background: url('../img/icons-sab6e008f99.png') 0 -1482px no-repeat; width: 20px; height: 18px; display: inline-block; position: relative; top: 4px; }
+.nav .nav__drop { display: none; position: absolute; left: 0; top: 43px; width: 300px; background: #a60516; padding: 10px 0; }
+.nav .nav__drop ul { list-style: none; float: none; padding: 0; font-size: 12px; color: white; border: none; float: left; width: 50%; font-size: 13px; }
+.nav .nav__drop ul li { border-style: none; padding: 0; float: none; height: auto; line-height: 1; }
+.nav .nav__drop ul a { border-style: none; padding: 0; margin: 0; float: none; display: block; padding: 8px 6px 8px 17px; line-height: 1.1; text-align: left; height: auto; width: auto; }
+.nav .nav__drop ul a:hover { background: #89000c; text-decoration: none; }
+.nav li:hover .nav__drop { display: block; }
 
 .subnav { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #313131), color-stop(100%, #131313)); background-image: -webkit-linear-gradient(#313131, #131313); background-image: -moz-linear-gradient(#313131, #131313); background-image: -o-linear-gradient(#313131, #131313); background-image: -ms-linear-gradient(#313131, #131313); background-image: linear-gradient(#313131, #131313); height: 22px; list-style: none; overflow: hidden; width: 100%; }
 @media only screen and (max-width: 700px) { .subnav { display: none; } }

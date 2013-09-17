@@ -308,14 +308,21 @@
 	background: #C9001C
 	font-size: 17px
 	list-style: none
+	position: relative
+	z-index: 200 
 	+r(step4)
 		font-size: 14px
-
+	
 	+r(step5)
 		display: none
-
+	.is-channel &
+		+r(step3)
+			font-size: 14px 
+		+r(step4)
+			font-size: 12px
 	li
 		float: left
+		position: relative
 	a
 		color: #fff
 		text-transform: uppercase
@@ -330,22 +337,51 @@
 		&:hover
 			background: #A60516 
 			text-decoration: underline
+	&>li:hover>a
+		background: #A60516 
 	.nav__1
 		width: 140px
 		+r(step3)
 			width: 18%
+		.is-channel &
+			width: 92px 
+			+r(step3)
+				width: 11% 
 	.nav__2
 		width: 160px
 		+r(step3)
 			width: 20%
+		.is-channel &
+			width: 131px 
+			+r(step3)
+				width: 16% 
 	.nav__3
 		width: 125px
 		+r(step3)
 			width: 15%
+		.is-channel &
+			width: 103px 
+			+r(step3)
+				width: 13%
+		
 	.nav__4
 		width: 280px
 		+r(step3)
 			width: 35%
+		.is-channel &
+			width: 84px 
+			+r(step3)
+				width: 10%
+	.nav__5
+		.is-channel &
+			width: 200px 
+			+r(step3)
+				width: 25%
+	.nav__6
+		.is-channel &
+			width: 95px 
+			+r(step3)
+				width: 13%
 	.nav__user
 		width: 95px
 		+r(step3)
@@ -355,11 +391,54 @@
 		a
 			border-right: none
 			display: block
+			.is-channel &
+				+background-image(linear-gradient(#383838, #202020))
 		i
 			+s(profile)
 			display: inline-block
 			position: relative
 			top: 4px
+	.nav__drop
+		display: none
+		position: absolute
+		left: 0
+		top: 43px  
+		width: 300px 
+		background: #A60516 
+		padding: 10px 0 
+		ul
+			list-style: none
+			float: none
+			padding: 0
+			font-size: 12px  
+			color: #fff
+			border: none
+			float: left
+			width: 50% 
+			font-size: 13px 
+			li
+				border-style: none
+				padding: 0
+				float: none
+				height: auto 
+				line-height: 1 
+			a
+				border-style: none
+				padding: 0
+				margin: 0
+				float: none  
+				display: block
+				padding: 8px 6px 8px 17px
+				line-height: 1.1 
+				text-align: left
+				height: auto 
+				width: auto 
+				&:hover
+					background: #89000C 
+					text-decoration: none
+	li:hover
+		.nav__drop
+			display: block
 
 .subnav
 	+background-image(linear-gradient(#313131, #131313))
