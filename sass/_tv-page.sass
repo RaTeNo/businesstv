@@ -1,0 +1,252 @@
+.livetv
+	padding: 0 8% 0 6.5%  
+	height: 75px
+	line-height: 75px
+	text-transform: uppercase
+	+med
+	+background-image(linear-gradient(top, #3a3a3a, #2a2a2a))
+	span 
+		font-size: 16px
+		color: #868686 
+		vertical-align: middle
+		
+.livetv__link
+	display: inline-block
+	vertical-align: middle
+	padding: 10px 17px 
+	border: 3px solid #000
+	+border-radius(3px)
+	color: #fed
+	line-height: 1
+	font-size: 24px
+	text-align: center
+	text-decoration: none
+	+text-shadow(0 0 5px rgba(252,252,252,.16))
+	background-color: #e71b23
+	+box-shadow(inset 0 0 16px #840709)
+.livetv__in
+	position: relative
+	padding-right: 78px
+	float: right
+	img
+		position: absolute
+		top: -9px
+		right: 0
+		
+.livetv__program
+	display: inline-block
+	margin: 0 10px
+	font-size: 30px
+	color: #fff
+	vertical-align: middle
+	font-weight: normal
+	+med-condom
+
+.submenu
+	padding: 15px 0  
+	list-style-type: none 
+	background: #fff 
+	li
+		margin: 10px 0
+		padding-right: 17px
+	a
+		display: inline-block
+		padding: 4px 10px 4px 30px
+		line-height: 1
+		font-size: 11px
+		text-transform: uppercase
+		color: #bb141a 
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		&.is-active
+			background: #910709
+			color: #fff 
+			&:hover
+				text-decoration: none
+				
+.video_big-descr 
+	.video__title
+		display: block
+		
+.tv-program 
+	margin: 20px 0
+	
+.addcomment_white
+	background: #fff 
+	
+.comments-wrap
+
+.comment
+	margin-bottom: 30px
+	@extend %clr
+	list-style-type: none
+.comment_level-2,
+.comment_level-3
+	margin: 10px 0 10px 50px
+.comment__pic
+	float: left
+	margin-right: 20px
+.comment__body
+	position: relative
+	top: -5px
+	overflow: hidden
+	font-size: 16px
+	color: #333
+.comment__author
+	color: #910709
+	text-decoration: none
+.comment__time
+	color: #c0c0c0 
+	font-size: 14px
+.comment__text
+	margin-top: 7px
+.comments-wrap_sublevel
+	margin-bottom: -10px
+
+.comment_textarea
+	.comment__pic
+		margin-right: 9px
+	.comment__body
+		top: -1px
+		padding: 2px 0 2px 11px 
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 26px
+			+s(arr1)
+.textarea
+	display: block
+	width: 100%
+	margin-bottom: 9px
+	padding: 10px
+	min-height: 70px
+	+border-box
+	border: 0
+	resize: vertical
+	max-height: 300px  
+	+box-shadow(0 -2px 0 2px #ccc, 0 -1px 0 1px #ccc)
+	&:focus
+		outline: none
+		+box-shadow(none)
+
+.btn-black 
+	@extend %blackbutton
+	
+
+.tv-program__top
+	position: relative
+	height: 45px
+	line-height: 45px
+	padding-bottom: 6px
+	.tv-program__days-wrap
+		position: absolute
+
+.move
+	position: relative
+	overflow: hidden
+	height: 45px
+	line-height: 45px
+.move__nav
+	position: absolute
+	top: 0
+	width: 28px
+	height: 45px
+	line-height: 45px
+	text-align: center
+	background: #d2d2d2 
+	border: 0
+	cursor: pointer
+	&:hover
+		background: #c8c8c8 
+	i
+		display: inline-block
+		vertical-align: middle
+.move__prev
+	left: 0
+	i
+		+s(arr3)
+.move__next
+	right: 0
+	i
+		+s(arr2)
+.move__main
+	position: absolute
+	left: 28px
+	right: 28px
+	top: 0
+	height: 45px
+	width: 5000px
+.tv-program__days-wrap
+	font-size: 0
+
+.tv-program__day
+	position: relative
+	display: inline-block
+	margin-right: -1px
+	width: 93px
+	height: 45px
+	border-left: 1px solid #fff
+	border-right: 1px solid #fff
+	font-size: 12px
+	text-align: center
+	line-height: 1
+	color: #898989 
+	cursor: pointer 
+	+background-image(linear-gradient(top, #f0f0f0, #eaeaea))
+	&:first-child
+		border-left: 0
+	&.is-active
+		color: #fff 
+		+background-image(linear-gradient(top, #bb141a 80%, #a61217))
+		&:after
+			content: ""
+			position: absolute
+			left: 50%
+			bottom: -6px
+			margin-left: -16px
+			width: 0px
+			height: 0px
+			border-style: solid
+			border-width: 6px 16px 0 16px
+			border-color: #a61217 transparent transparent transparent
+	span
+		display: block
+		margin-top: 7px
+		font-size: 16px
+		+med
+
+.tv-program__main
+	padding: 23px 10px
+	background: #fff 
+	margin-top: -6px
+	@extend %clr
+	ul
+		float: left
+		margin-left: 4%
+		list-style-type: none 
+		width: 46.5%
+		border-left: 1px solid #eaecec 
+		&:first-child
+			margin-left: 0
+			border-left: 0
+	li
+		padding: 7px 0 7px 8%
+		font-size: 18px
+		&.is-active
+			background: #3a3a3a 
+			color: #fff 
+			+med
+			span
+				+reg
+	span
+		display: inline-block
+		margin-right: 5%
+		font-size: 14px
+	i
+		display: inline-block
+		margin-left: 10px
+		font-size: 8px
+		font-style: normal
+		text-transform: uppercase
