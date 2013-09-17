@@ -70,6 +70,13 @@ body
 	.l-col1
 		float: left
 		width: 73% 
+		&.l-col1_spaced
+			padding-left: 4% 
+			width: 69% 
+			+r(step4)
+				padding-left: 0 
+			+r(step5)
+				width: auto 
 		+r(step5)
 			float: none
 			width: auto 
