@@ -592,28 +592,35 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .tv-program__main i { display: inline-block; margin-left: 10px; font-size: 8px; font-style: normal; text-transform: uppercase; }
 
 .program .actual-program { float: left; }
+@media only screen and (max-width: 1200px) { .program .actual-program { float: none; } }
 .program .likes { float: right; margin-top: 37px; }
+@media only screen and (max-width: 1200px) { .program .likes { float: none; margin-top: 10px; } }
 
 .program__banner { overflow: hidden; margin-bottom: 15px; position: relative; }
 
 .program__name { position: absolute; top: 14px; left: 0; padding: 4px 14px 4px 42px; font-family: "pf_dintext_probold", "arial narrow", sans-serif; background: #620407; font-size: 24px; text-transform: uppercase; color: white; }
 
-.program__descr { margin-bottom: 43px; padding-left: 5.4%; font-size: 16px; font-family: "pfmedium", "arial narrow", sans-serif; }
+.program__descr { margin-bottom: 5.4%; padding-left: 5.4%; font-size: 16px; font-family: "pfmedium", "arial narrow", sans-serif; }
 
 .addcomment_gray { background: #e9eaea; clear: both; }
 
 .media-section { overflow: hidden; margin: 46px 0 0; }
-.media-section .videos { margin-right: -7%; }
+.media-section .videos { margin-right: -4%; }
 .media-section .video { width: 29.5%; margin: 0 3.4% 3.4% 0; }
+@media only screen and (max-width: 700px) { .media-section .video { width: 46.5%; } }
+@media only screen and (max-width: 550px) { .media-section .video { float: left; } }
+.media-section .video:hover .video__content { padding: 13px 6px 13px 6px; }
 .media-section .video .video__content { padding: 13px 6px 13px 51px; }
+@media only screen and (max-width: 940px) { .media-section .video .video__content { padding: 2px 6px 2px 40px; } }
+@media only screen and (max-width: 700px) { .media-section .video .video__content { padding: 13px 6px 13px 40px; } }
 .media-section .video .video__icon { top: 10px; }
 
 .media-section__title { margin-bottom: 15px; font-size: 18px; font-family: "pf_dintext_probold", "arial narrow", sans-serif; }
 
-.video_descr-top:hover .video__content { bottom: 0; }
+.video_descr-top:hover .video__content { bottom: 0; padding: 13px 6px 13px 51px; }
 .video_descr-top .video__content { top: 0; bottom: auto; }
 
-.actual-program { margin: 23px 0 23px 19px; }
+.actual-program { margin: 2.7% 0 2.7% 19px; }
 
 .actual-program__days { margin-bottom: 8px; font-size: 16px; }
 .actual-program__days strong { font-family: "pfmedium", "arial narrow", sans-serif; font-weight: normal; }

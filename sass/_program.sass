@@ -1,9 +1,14 @@
 .program
     .actual-program
         float: left
+        +r(step1)
+            float: none
     .likes
         float: right
         margin-top: 37px
+        +r(step1)
+            float: none
+            margin-top: 10px
 .program__banner
     overflow: hidden
     margin-bottom: 15px
@@ -20,7 +25,7 @@
     color: #fff  
 
 .program__descr
-    margin-bottom: 43px
+    margin-bottom: 5.4%
     padding-left: 5.4%
     font-size: 16px
     +med
@@ -33,16 +38,27 @@
     overflow: hidden
     margin: 46px 0 0 
     .videos
-        margin-right: -7%
+        margin-right: -4%
     .video
         width: 29.5%
         margin: 0 3.4% 3.4% 0
+        +r(step5)
+            width: 46.5%
+        +r(step6) 
+            float: left
+        &:hover
+            .video__content
+                padding: 13px 6px 13px 6px
         .video__content
             padding: 13px 6px 13px 51px
+            +r(step3)
+                padding: 2px 6px 2px 40px 
+            +r(step5) 
+                padding: 13px 6px 13px 40px
         .video__icon
-            top: 10px
+            top: 10px           
 .media-section__title
-    margin-bottom: 15px
+    margin-bottom: 15px   
     font-size: 18px
     +bold
     
@@ -50,12 +66,13 @@
     &:hover
         .video__content
             bottom: 0
+            padding: 13px 6px 13px 51px
     .video__content
         top: 0
         bottom: auto
 
 .actual-program
-    margin: 23px 0 23px 19px
+    margin: 2.7% 0 2.7% 19px
 .actual-program__days
     margin-bottom: 8px
     font-size: 16px
