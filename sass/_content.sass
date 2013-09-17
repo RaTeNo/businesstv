@@ -151,6 +151,8 @@
 		text-decoration: none
 		font-size: 12px
 		display: inline-block
+		&:hover
+			text-decoration: underline
 	.smallentry__title
 		font-size: 14px
 		text-decoration: none
@@ -165,6 +167,36 @@
 	.icon-play
 		margin-left: 6px 
 		vertical-align: middle
+	&.smallentry_alt
+		margin-bottom: 13px 
+		.smallentry__metadata
+			display: block
+			position: static
+			margin: -1px 0 2px
+		.smallentry__pic
+			+r(step5)
+				display: none 
+	&.smallentry_big
+		margin-bottom: 40px 
+		.smallentry__title
+			font-size: 18px
+			+med
+			a
+				&:hover
+					text-decoration: underline
+					color: #7f0102 
+		.smallentry__summary
+			font-size: 16px 
+		.smallentry__pic
+			margin-right: 20px
+			width: 40%
+			img
+				display: block
+				width: 100% 
+		.smallentry__metadata
+			+r(step4)
+				display: block
+				position: static
 
 .entry
 	overflow: hidden
@@ -219,7 +251,12 @@
 		cursor: pointer
 	.cycle-pager-active
 		+s(pageactive)
-		
+.mainslider_news
+	margin-bottom: 30px
+	.entry
+		padding: 4%
+		width: 100% - 8%
+		background: #F0F0F0 
 
 .b_news
 	.more
