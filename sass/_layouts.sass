@@ -101,14 +101,23 @@ body
 		float: left
 		margin-left: -40px
 		width: 13.5%
+		+r(step2)
+			float: none
+			width: 100%
+			margin-left: 0
 	.l-col2
 		margin: 0 0 0 2.8%
 		width: 63.5%
 		float: left
+		+r(step2)
+			margin-left: 0
+			width: 76%
+		+r(step5)
+			width: 100%
 	.l-col3
 		float: right
 		width: 21%
-		+r(step2)
+		+r(step5)
 			display: none
 		.video
 			margin: 20px 0
