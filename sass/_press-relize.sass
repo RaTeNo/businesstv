@@ -34,6 +34,8 @@
 	word-break: break-all 
 	padding: 0 0 18px 4.3%
 	@extend %clr
+	.is-selected
+		background: #f8cece 
 	&:hover
 		background: #f6f6f6 
 .pr__left
@@ -48,9 +50,18 @@
 	.download
 		margin-top: 18px
 		text-align: left
+.pr__right_mod
+	text-align: left
+	padding-right: 10%
+	+r(step5)
+		padding-right: 2%
+.pr__img
+	float: left
+	margin-right: 18px
 .pr__categ
 	font-size: 12px
 	color: #797979
+	vertical-align: middle
 .pr__counter-downl
 	float: right
 	position: relative
