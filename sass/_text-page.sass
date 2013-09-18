@@ -1,0 +1,107 @@
+.article
+	margin-bottom: 7px
+	padding: 0 2% 0 4.4%
+	overflow: hidden
+	border-bottom: 1px solid #dedede 
+	.bc
+		margin-bottom: 14px  
+.article__title
+	margin-bottom: 15px
+	font-size: 36px
+	+bold
+	line-height: 1
+.article__meta
+	color: #7f0102
+	font-size: 14px
+	+reg-condom
+.article__img
+	margin: 20px 0 30px -40px 
+.article__content
+	font-size: 16px
+	color: #333
+	line-height: 1.5
+	p
+		margin: 21px 0 
+	a
+		color: #bb141a
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+	strong, b
+		+med
+		font-weight: normal
+
+.rate
+	font-size: 14px
+	color: #c0c0c0
+	span, a
+		display: inline-block
+		vertical-align: middle
+	a
+		margin: 0 5px
+		+gray
+		+opacity(.3)
+		+transition(all .2s linear)
+		&:hover
+			+gray-zero
+			+opacity(1)
+.rate__top
+	+s(arr_top)
+.rate__bottom
+	+s(arr_bottom)
+.rate_article
+	float: right
+	+r(step5)
+		float: none
+.rate_small
+	font-size: 12px
+	padding-top: 5px
+	.rate__top
+		+s(arr_top-s)
+	.rate__bottom
+		+s(arr_bottom-s)
+
+.tags
+	color: #777
+	font-size: 14px
+	a
+		color: #bb141a 
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.tags_article
+	float: left
+	+r(step5)
+		float: none
+	
+.post-s-title
+	margin-bottom: 20px
+	padding-top: 20px
+	font-size: 18px
+	font-weight: normal
+	+bold
+
+.post-s__descr
+	clear: both
+	display: block
+	color: #222
+	font-size: 14px
+	text-decoration: none 
+
+.smallentry-wrap
+	overflow: hidden
+	margin: 0 -2% 30px 0
+	+r(step5)
+		width: 100%
+		margin-right: 0
+	.smallentry_small
+		float: left
+		width: 31%
+		margin-right: 2%
+		+r(step3)
+			width: 48%
+		+r(step5)
+			width: 100%
+			margin-right: 0
+	.smallentry__pic
+		padding-top: 3px

@@ -152,6 +152,8 @@
 	overflow: hidden
 	font-size: 16px
 	color: #333
+	.rate_small
+		float: left
 .comment__author
 	color: #910709
 	text-decoration: none
@@ -161,8 +163,11 @@
 .comment__text
 	margin-top: 7px
 .comments-wrap_sublevel
-	margin-bottom: -10px
-
+	margin: 25px 0 -10px
+.comment__reply
+	float: right
+	color: #9a2c2e
+	font-size: 12px 
 .comment_textarea
 	.comment__pic
 		margin-right: 9px
@@ -186,9 +191,11 @@
 	resize: vertical
 	max-height: 300px  
 	+box-shadow(0 -2px 0 2px #ccc, 0 -1px 0 1px #ccc)
+	+transition(all 200ms linear)
 	&:focus
 		outline: none
-		+box-shadow(none)
+		//background: #e6e6e6
+		
 
 .btn-black 
 	@extend %blackbutton
