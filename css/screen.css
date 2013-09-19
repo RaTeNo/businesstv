@@ -448,7 +448,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .b_social .h2 { margin-bottom: 0; }
 .b_social .b__content { border: 10px solid whitesmoke; border-top: none; overflow: hidden; }
 
-.addcomment { padding: 8px 13px; background: #f0f2f2; font-family: "pfmedium", "arial narrow", sans-serif; font-size: 18px; color: #333333; margin-bottom: 20px; }
+.addcomment { padding: 8px 13px; background: #f0f2f2; font-family: "pfmedium", "arial narrow", sans-serif; font-size: 18px; color: #333333; margin: 20px 0; }
 .addcomment strong { font-weight: normal; }
 .addcomment a { text-decoration: none; color: #910709; margin-left: 6px; }
 .addcomment a i { display: inline-block; margin-right: 5px; vertical-align: middle; background: url('../img/icons-s6ae6143368.png') 0 -2019px no-repeat; width: 14px; height: 13px; }
@@ -773,10 +773,13 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .icon-play { display: inline-block; background: url('../img/icons-s6ae6143368.png') 0 -1736px no-repeat; width: 11px; height: 11px; vertical-align: middle; }
 
-.article { margin-bottom: 7px; padding: 0 2% 0 4.4%; overflow: hidden; border-bottom: 1px solid #dedede; }
+.article { margin-bottom: 7px; padding: 0 2% 0 4.4%; border-bottom: 1px solid #dedede; }
+@media only screen and (max-width: 700px) { .article { padding-left: 0; } }
 .article .bc { margin-bottom: 14px; }
 
 .article__title { margin-bottom: 15px; font-size: 36px; font-family: "pf_dintext_probold", "arial narrow", sans-serif; line-height: 1; }
+
+.article__title-2 { font-size: 24px; }
 
 .article__meta { color: #7f0102; font-size: 14px; font-family: "pf_din_text_comp_proregular", arial, sans-serif; }
 
@@ -808,8 +811,8 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .tags a { color: #bb141a; text-decoration: none; }
 .tags a:hover { text-decoration: underline; }
 
-.tags_article { float: left; }
-@media only screen and (max-width: 700px) { .tags_article { float: none; } }
+.tags_article { float: left; margin-bottom: 25px; }
+@media only screen and (max-width: 700px) { .tags_article { float: none; margin-bottom: 0; } }
 
 .post-s-title { margin-bottom: 20px; padding-top: 20px; font-size: 18px; font-weight: normal; font-family: "pf_dintext_probold", "arial narrow", sans-serif; }
 
@@ -821,3 +824,36 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 @media only screen and (max-width: 940px) { .smallentry-wrap .smallentry_small { width: 48%; } }
 @media only screen and (max-width: 700px) { .smallentry-wrap .smallentry_small { width: 100%; margin-right: 0; } }
 .smallentry-wrap .smallentry__pic { padding-top: 3px; }
+
+.event { overflow: hidden; margin-bottom: 21px; }
+
+.event__img { float: left; margin-right: 4%; }
+@media only screen and (max-width: 830px) { .event__img { float: none; margin: 0 0 20px; } }
+
+.event__descr { overflow: hidden; }
+
+.event__categ { font-size: 14px; color: silver; font-family: "pfmedium", "arial narrow", sans-serif; }
+
+.event__date { margin: 4px 0 7px; font-size: 24px; color: #910709; font-family: "pfmedium", "arial narrow", sans-serif; }
+@media only screen and (max-width: 830px) { .event__date { font-size: 20px; } }
+
+.event__title { margin-bottom: 19px; font-size: 30px; font-weight: normal; }
+@media only screen and (max-width: 830px) { .event__title { font-size: 24px; } }
+
+.event__info { color: #333333; font-size: 16px; }
+
+.people-info { margin-bottom: 20px; font-size: 16px; color: #333333; line-height: 1.5; }
+.people-info p { margin: 0; }
+.people-info a { color: #bb141a; text-decoration: none; }
+.people-info a:hover { text-decoration: underline; }
+.people-info strong, .people-info b { font-family: "pfmedium", "arial narrow", sans-serif; font-weight: normal; }
+
+.people-info__title { margin-bottom: 15px; font-size: 24px; font-family: "pfmedium", "arial narrow", sans-serif; font-weight: normal; }
+
+.people-info__dates { padding-left: 35px; }
+.people-info__dates ul { list-style-type: none; }
+
+.people-info__dates_mod { padding-left: 0; }
+
+.defin { margin: 15px 0 28px -75px; padding: 5% 5px 5% 3.75%; color: #333333; font-size: 18px; font-family: "pfmedium", "arial narrow", sans-serif; line-height: 1.3; border-top: 3px solid #bb141a; border-bottom: 3px solid #bb141a; }
+@media only screen and (max-width: 700px) { .defin { margin-left: -20px; } }
