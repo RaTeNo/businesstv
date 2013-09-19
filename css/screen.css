@@ -857,3 +857,14 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .defin { margin: 15px 0 28px -75px; padding: 5% 5px 5% 3.75%; color: #333333; font-size: 18px; font-family: "pfmedium", "arial narrow", sans-serif; line-height: 1.3; border-top: 3px solid #bb141a; border-bottom: 3px solid #bb141a; }
 @media only screen and (max-width: 700px) { .defin { margin-left: -20px; } }
+
+.smallentry_sidebar { margin-bottom: 19px; overflow: hidden; }
+@media only screen and (max-width: 700px) { .smallentry_sidebar { display: inline-block; vertical-align: top; width: 45%; margin-right: 2%; } }
+.smallentry_sidebar .smallentry__pic { float: none; }
+.smallentry_sidebar .smallentry__metadata { position: static; }
+.smallentry_sidebar .smallentry__time { font-size: 20px; margin: 10px 0; font-family: "pfmedium", "arial narrow", sans-serif; color: #910709; }
+@media only screen and (max-width: 940px) { .smallentry_sidebar .smallentry__time { font-size: 16px; } }
+.smallentry_sidebar .smallentry__title { font-size: 16px; font-family: "pfmedium", "arial narrow", sans-serif; }
+@media only screen and (max-width: 940px) { .smallentry_sidebar .smallentry__title { font-size: 14px; } }
+.smallentry_sidebar .smallentry__categ { font-size: 13px; color: silver; font-family: "pfmedium", "arial narrow", sans-serif; }
+@media only screen and (max-width: 940px) { .smallentry_sidebar .smallentry__categ { font-size: 12px; } }
