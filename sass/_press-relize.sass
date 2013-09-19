@@ -1,0 +1,122 @@
+.bc+.h1
+	margin: -26px 0 13px
+.upload
+	padding: 10px 20px
+	background: #333  
+.upload__title
+	color: #fff
+	display: inline-block
+	margin-right: 25px
+	font-size: 30px
+	+r(step5)
+		font-size: 20px
+.upload__title,
+.upload__link
+	display: inline-block
+	vertical-align: middle
+.upload__link
+	@extend %redbutton
+
+.submenu_small
+	width: 115px
+	float: left
+	+r(step2)
+		float: none
+		width: 100%
+	a
+		padding-left: 30px
+.pr-wrap
+	overflow: hidden
+	margin-bottom: 20px
+.pr
+	position: relative
+	+border-box
+	word-break: break-all 
+	padding: 0 0 18px 4.3%
+	@extend %clr
+	.is-selected
+		background: #f8cece 
+	&:hover
+		background: #f6f6f6 
+.pr__left
+	float: left
+	width: 77.5%
+	+r(step5)
+		width: 85%
+		padding-right: 2%
+.pr__right
+	overflow: hidden
+	text-align: center
+	.download
+		margin-top: 18px
+		text-align: left
+.pr__right_mod
+	text-align: left
+	padding-right: 10%
+	+r(step5)
+		padding-right: 2%
+.pr__img
+	float: left
+	margin-right: 18px
+.pr__categ
+	font-size: 12px
+	color: #797979
+	vertical-align: middle
+.pr__counter-downl
+	float: right
+	position: relative
+	padding-left: 16px
+	font-size: 12px
+	color: #d0d0d0
+	&:before
+		content: "" 
+		position: absolute
+		left: 0
+		top: 1px
+		+s(download)
+.pr__title
+	font-size: 18px
+	clear: both
+	font-weight: normal
+	+med
+	+r(step5)
+		font-size: 16px
+	a
+		color: #333
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.pr__descr
+	font-size: 16px
+	color: #000
+	+r(step5)
+		font-size: 14px
+.pr__meta
+	color: #7f0102
+	font-size: 12px 
+	+med
+.download
+	display: inline-block
+	position: relative
+	padding-left: 28px
+	color: #797979 
+	font-size: 11px
+	text-decoration: none
+	line-height: 1.2
+	i
+		position: absolute
+		left: 0
+		top: 7px
+	span
+		display: block
+		font-size: 20px
+		color: #e81b23 
+		+r(step5)
+			font-size: 16px
+		
+.icon-word
+	+s(doc_word)
+.icon-pdf
+	+s(doc_pdf)
+.icon-ppt
+	+s(doc_ppt)

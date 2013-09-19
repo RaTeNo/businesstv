@@ -78,12 +78,13 @@
 			display: inline-block 
 	a
 		display: inline-block
-		padding: 4px 10px 4px 20px
+		padding: 5px 10px 5px 20px
 		line-height: 1
 		font-size: 11px
 		text-transform: uppercase
 		color: #bb141a 
 		text-decoration: none
+		+med
 		&:hover
 			text-decoration: underline
 		&.is-active
@@ -151,6 +152,8 @@
 	overflow: hidden
 	font-size: 16px
 	color: #333
+	.rate_small
+		float: left
 .comment__author
 	color: #910709
 	text-decoration: none
@@ -160,8 +163,11 @@
 .comment__text
 	margin-top: 7px
 .comments-wrap_sublevel
-	margin-bottom: -10px
-
+	margin: 25px 0 -10px
+.comment__reply
+	float: right
+	color: #9a2c2e
+	font-size: 12px 
 .comment_textarea
 	.comment__pic
 		margin-right: 9px
@@ -185,9 +191,11 @@
 	resize: vertical
 	max-height: 300px  
 	+box-shadow(0 -2px 0 2px #ccc, 0 -1px 0 1px #ccc)
+	+transition(all 200ms linear)
 	&:focus
 		outline: none
-		+box-shadow(none)
+		//background: #e6e6e6
+		
 
 .btn-black 
 	@extend %blackbutton

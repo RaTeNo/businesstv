@@ -1,0 +1,62 @@
+.search-big	
+	padding: 25px
+	background: #f6f6f6
+.search-big__wrap
+	position: relative
+	@extend %clr
+	.input_big
+		position: absolute
+		left: 0
+		width: auto
+		right: 107px
+.search-big__btn
+	float: right
+	width: 107px
+	padding: 0 13px
+	height: 38px
+	@extend %redbutton
+	font-size: 16px
+	+med
+	+box-shadow(1px 2px 0 #c5c5c5)
+	&:hover
+		+box-shadow(1px 2px 0 #bcbcbc)
+	&:active
+		+box-shadow(none)
+	i
+		display: inline-block
+		position: relative
+		top: 2px
+		margin-right: 10px
+		+s(glass2)
+.input
+	height: 32px
+	background: #f0f0f0
+	border-style: none
+	border-top: 2px solid #C0C0C0
+	border-bottom: 1px solid #fff 
+	border-left: 1px solid #C0C0C0
+	padding: 7px 15px
+	width: 100%
+	color: #202020
+	font-size: 14px 
+	+border-box
+	+transition(all 200ms linear)
+	+placeholder
+		font-style: italic
+	&:focus
+		outline: none
+		background: #e6e6e6
+
+.input_big
+	padding: 0 14px
+	font-size: 16px
+	+med
+	height: 37px
+.wrapper
+	overflow: hidden
+	padding: 2px 0 
+.icon-play
+	display: inline-block
+	+s(play)
+	vertical-align: middle
+
