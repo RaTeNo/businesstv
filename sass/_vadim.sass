@@ -2,17 +2,29 @@
 	@extend %clr
 	list-style-type: none
 	margin-left: -6%
+	@include r($media:'step1')
+		margin-left: -3%
+	@include r($media:'step4')
+		margin-left: 0%
+	@include r($media:'step5')
+		margin-left: -6%		
 .experts__item
 	float: left
 	width: 27.3%
 	margin-left: 6%
 	margin-bottom: 30px
+	@include r($media:'step1')
+		width: 30.3%
+		margin-left: 3%
+	@include r($media:'step4')
+		width: 44%
+		margin-left: 6%	
 	a
 		display: block
 .experts__img
 	position: relative
 	overflow: hidden
-	height: 310px
+	// height: 310px
 	img
 		width: 100%
 		height: 100%
