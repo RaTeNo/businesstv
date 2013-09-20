@@ -32,6 +32,15 @@ $(document).ready(function() {
 		tv_tooltip();
 	});
 	
+	// popup close
+	$(".js-close-popup").click(function(){
+		$(".js-popup").hide();
+		$(".js-overlay").hide();
+	});
+	$(".js-overlay").click(function(){
+		$(".js-popup").hide();
+		$(this).hide();
+	});
 
 	//begin debug width
 	$('.page').after('<div class="debug"></div>')
