@@ -70,6 +70,11 @@ $(document).ready(function() {
 	}
 	select();
 
+	if ($(".js-datepicker").length > 0) {
+		$(".js-datepicker").datepicker();
+		
+	}
+
 	//begin debug width
 	$('.page').after('<div class="debug"></div>')
 	$(window).on( 'resize', debug);
