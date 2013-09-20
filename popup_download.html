@@ -696,18 +696,24 @@
 	<div class="input-wrap">
 		<label class="label">
 			<span class="label__text">Категорія</span>
-			<div class="select js-select-list">
-				<span class="select__text input input_black is-inactive">Оберіть категорію</span>
-				<input type="hidden" class="js-select-input">
-				<ul class="select__list">
-					<li data-id="1">Варіант-1</li>
-					<li data-id="2">Варіант-2</li>
-					<li data-id="3">Варіант-3</li>
-				</ul>
-			</div>
 		</label>
+		<div class="select js-select">
+			<span class="select__text input input_black">Оберіть категорію</span>
+			<input type="hidden" class="js-select-input" value="">
+			<ul class="select__list">
+				<li data-id="1">Варіант-1</li>
+				<li data-id="2">Варіант-2</li>
+				<li data-id="3">Варіант-3</li>
+				<li data-id="4">Варіант-4</li>
+			</ul>
+		</div>
 	</div>
 	<div class="input-wrap input-wrap_mod">
+		<div class="drop-zone">
+			<div class="drop-zone__wrap">
+				Перетягніть ваш файл в це поле
+			</div>
+		</div>
 		<button class="btn-red">Завантажити</button>
 	</div>
 	<button class="popup__close js-close-popup"></button>

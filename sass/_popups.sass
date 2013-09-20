@@ -14,7 +14,7 @@
 	top: 230px
 	left: 50%
 	margin: 0 0 0 -293px 
-	padding: 40px 50px 
+	padding: 40px 50px 25px 
 	width: 586px
 	//height: 350px   
 	z-index: 2000
@@ -52,9 +52,11 @@
 .input-wrap
 	position: relative
 	margin-bottom: 15px
+	font-size: 0
 	.select
 		display: inline-block
 		vertical-align: middle
+		width: 395px
 	a
 		display: inline-block
 		vertical-align: middle
@@ -129,7 +131,7 @@
 	&:focus
 		background: #222
 .label__valid
-	dn
+	display: none
 	position: absolute
 	right: 12px
 	top: 12px
@@ -183,6 +185,55 @@
 		line-height: 34px
 		
 .select
-	.is-inactive
-		color: #595959 
-		+italic
+	position: relative
+	&.is-active
+		.select__text
+			&:after
+				+rotate(180)
+.select__text
+	position: relative
+	display: block
+	+border-box
+	color: #595959 
+	cursor: pointer
+	+italic
+	&.is-activated
+		+light
+		color: #a8a8a8
+	&:after
+		content: ""
+		position: absolute
+		top: 12px
+		right: 12px
+		+s(arr6) 
+		+transition(all .2s linear)
+.select__list
+	position: absolute
+	left: 0
+	right: 0
+	display: none
+	z-index: 2
+	background: #292929
+	list-style-type: none 
+	li
+		padding: 5px 15px 
+		color: #a8a8a8
+		font-size: 16px
+		+light
+		cursor: pointer
+		&:hover
+			background: #222
+
+
+.drop-zone
+	margin: 15px 0
+	padding: 4px 
+	font-size: 15px
+	color: #b2b2b2 
+	background: #424242 
+	border: 1px solid #323232
+.drop-zone__wrap
+	height: 78px
+	line-height: 78px
+	text-align: center
+	border: 1px dashed #5b5b5b

@@ -42,6 +42,34 @@ $(document).ready(function() {
 		$(this).hide();
 	});
 
+	// select
+	function select() {
+		var select = $(".js-select");
+		var select_list = $(".select__list");
+		var select_item = $(".select__list li");
+		select.each(function(){
+			$(this).click(function(){
+				if($(this).hasClass("is-active")) {
+					$(this).removeClass("is-active");
+					$(this).find(select_list).slideUp("fast");
+				}
+				else {
+					select.removeClass("is-active")
+					$(this).addClass("is-active");
+					$(this).find(select_list).slideDown("fast");
+				}
+			});
+			select_item.click(function(){
+				var text = $(this).text();
+				var data_id = $(this).attr("data-id");
+				$(this).parent().parent().find(".select__text").addClass("is-activated").text(text);
+				$(this).parent().parent().find(".js-select-input").val(data_id);
+			});
+		});
+		
+	}
+	select();
+
 	//begin debug width
 	$('.page').after('<div class="debug"></div>')
 	$(window).on( 'resize', debug);
