@@ -93,7 +93,7 @@
 
 .more
 	text-align: center
-	margin-top: 12px 
+	margin: 12px 0
 	.more__in
 		display: inline-block
 		color: #7f0102
@@ -336,6 +336,7 @@
 		bottom: 0
 		left: 0 
 		right: 0 
+		background: #000
 		background: rgba(#000, .6) 
 		padding: 6px 6px 6px 51px
 		color: #fff 
@@ -395,7 +396,7 @@
 .videos
 	margin-right: -4% 
 	overflow: hidden
-	+r(step6)
+	+r(step5)
 		margin: 0 
 	.video
 		float: left
@@ -409,7 +410,7 @@
 .bycategs
 	margin-right: -4% 
 	overflow: hidden
-	+r(step6)
+	+r(step5)
 		margin: 0 
 	.bycateg
 		float: left
@@ -483,8 +484,38 @@
 		margin-bottom: 0 
 	.b__content
 		border: 10px solid #F5F5F5 
-		border-top: none
+		border-top: none   
 		overflow: hidden
 
-			
-				
+.radio
+	position: relative
+	padding-left: 28px
+	input, i
+		position: absolute
+		top: 0
+		left: 0
+		width: 16px
+		height: 16px
+	i
+		+border-radius(50%)
+		background-: #fff
+		+box-shadow(inset 0 1px 4px rgba(0,0,0,.32))
+		&:after
+			content: ""
+			display: none
+			position: absolute
+			top: 4px
+			left: 4px
+			width: 8px
+			height: 8px
+			+border-radius(50%)
+			background: #212121
+	input  
+		z-index: 2
+		opacity: 0
+		&:checked
+			+ i
+				&:after
+					display: block
+
+

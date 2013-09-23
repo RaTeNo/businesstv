@@ -4,8 +4,13 @@ body
 
 	&.is-withmenu
 		+r(step5)
-			//overflow: hidden
-			+translate3d(240px, 0, 0)
+			overflow-x: hidden
+			.site,
+			.footer
+				position: relative
+				left: 240px
+			.sidenav
+				left: 0
 .sidenav
 	position: fixed
 	top: 0 

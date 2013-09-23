@@ -4,6 +4,7 @@
 	line-height: 75px
 	text-transform: uppercase
 	+med
+	background: #3a3a3a
 	+background-image(linear-gradient(top, #3a3a3a, #2a2a2a))
 	+r(step2)
 		padding: 0 3% 0 3%  
@@ -56,20 +57,87 @@
 	+r(step4)
 		font-size: 24px
 
+// old style
+// .submenu
+// 	position: relative
+// 	padding: 15px 0  
+// 	background: #fff 
+// 	+r(step2)
+// 		height: 43px
+// 		padding: 0
+// 		margin-bottom: 30px
+// 		line-height: 43px
+// 	ul
+// 		list-style-type: none 
+// 		+r(step2)
+// 			white-space: nowrap
+// 			overflow: hidden
+// 	li
+// 		margin: 10px 0
+// 		padding-right: 17px
+// 		+r(step2)
+// 			margin: 0
+// 			display: inline-block 
+// 	a
+// 		display: inline-block
+// 		padding: 5px 10px 5px 20px
+// 		line-height: 1
+// 		font-size: 11px
+// 		text-transform: uppercase
+// 		color: #bb141a 
+// 		text-decoration: none
+// 		+med
+// 		&:hover
+// 			text-decoration: underline
+// 		&.is-active
+// 			background: #910709
+// 			color: #fff 
+// 			&:hover
+// 				text-decoration: none
+
+// .submenu__more
+// 	display: none
+// 	position: absolute
+// 	right: 0
+// 	top: 0
+// 	width: 135px
+// 	background: #fff
+// 	+box-shadow(-5px 0 2px #fff)
+// 	+r(step2)
+// 		display: block
+// 	ul
+// 		display: none
+// 		position: absolute
+// 		z-index: 1000
+// 		right: 0
+// 		width: 135px
+// 		background: #fff 
+// 		list-style-type: none 
+// 	li
+// 		display: block
+// .submenu__more-link
+// 	position: relative
+// 	&:after
+// 		content: ""
+// 		position: absolute
+// 		right: -5px
+// 		top: 6px
+// 		+s(arr4) 
+// new style
 .submenu
 	position: relative
 	padding: 15px 0  
 	background: #fff 
 	+r(step2)
-		height: 43px
+		//height: 43px
 		padding: 0
 		margin-bottom: 30px
 		line-height: 43px
 	ul
 		list-style-type: none 
 		+r(step2)
-			white-space: nowrap
-			overflow: hidden
+			//white-space: nowrap
+			//overflow: hidden
 	li
 		margin: 10px 0
 		padding-right: 17px
@@ -101,26 +169,8 @@
 	width: 135px
 	background: #fff
 	+box-shadow(-5px 0 2px #fff)
-	+r(step2)
-		display: block
 	ul
 		display: none
-		position: absolute
-		z-index: 1000
-		right: 0
-		width: 135px
-		background: #fff 
-		list-style-type: none 
-	li
-		display: block
-.submenu__more-link
-	position: relative
-	&:after
-		content: ""
-		position: absolute
-		right: -5px
-		top: 6px
-		+s(arr4) 
 
 .video_big-descr 
 	.video__title  
@@ -259,6 +309,7 @@
 	text-align: center
 	line-height: 1
 	cursor: pointer 
+	background: #f0f0f0
 	+background-image(linear-gradient(top, #f0f0f0, #eaeaea))
 	color: #222 
 	&:first-child
@@ -269,6 +320,7 @@
 			color: #898989 
 	&.is-active
 		color: #fff
+		background: #a61217
 		+background-image(linear-gradient(top, #bb141a 80%, #a61217))
 		span
 			color: #fff 
@@ -279,12 +331,16 @@
 			bottom: -6px
 			margin-left: -16px
 			width: 0px
+			z-index: 2
 			height: 0px
 			border-style: solid
 			border-width: 6px 16px 0 16px
 			border-color: #a61217 transparent transparent transparent
 	&:hover
 		background: #f8f8f8 
+		&.is-active
+			background: #a61217
+			+background-image(linear-gradient(top, #bb141a 80%, #a61217))
 	span
 		display: block
 		margin-top: 7px
@@ -346,6 +402,7 @@
 	padding: 17px 20px
 	background: #fff
 	width: 330px
+	z-index: 500
 	+border-box
 	font-size: 14px
 	border: 2px solid #3a3a3a
@@ -362,6 +419,8 @@
 	+med
 .tooltip__text   
 	margin-bottom: 12px
+	-ms-word-break: break-all 
+	word-break: break-all 
 .tooltip__meta
 	color: #8f8f8f
 .is-hidden

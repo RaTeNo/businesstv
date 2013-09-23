@@ -1,11 +1,11 @@
 $(document).ready(function() {
 
-	$('.header__toggle').click(function (e) {
-		$('body').toggleClass('is-withmenu');
+	$('.header__toggle').click(function () {
+		$('body').toggleClass("is-withmenu");
 	});
 
-	$('.search__toggle').click(function (e) {
-		$('body').toggleClass('is-withsearch');
+	$('.search__toggle').click(function () {
+		$('body').toggleClass("is-withsearch");
 	});
 
 	// program tooltip
@@ -97,12 +97,26 @@ $(document).ready(function() {
 			$(".js-datepicker").toggle();
 		})		
 	}
+	function fixed_subnav() {
+		var height = $(".header").outerHeight()+$(".top").outerHeight()+$(".livetv").outerHeight();
+		var menu_pos = $(".submenu").position().top;
+		if ($(window).scrollTop() >= menu_pos) {
+			$("body").addClass("is-fixed-subnav");
+		}
+		else {
+			$("body").removeClass("is-fixed-subnav");
+		}
+	}
+	$(window).scroll(function(){
+			fixed_subnav();
+	});
+	
 
 	//begin debug width
 	$('.page').after('<div class="debug"></div>')
 	$(window).on( 'resize', debug);
 	function debug(){
-		$('.debug').html($(window).width()+17);
+		$('.debug').html($(window).width());
 	}
 	debug();
 	//end debug width
