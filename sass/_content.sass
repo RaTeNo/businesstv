@@ -148,6 +148,7 @@
 	color: #222222
 	font-size: 14px
 	margin-bottom: 10px
+	overflow: hidden
 	.smallentry__meta
 		margin-bottom: 0
 		position: relative
@@ -261,7 +262,7 @@
 				text-decoration: underline
 .cycle-pager
 	text-align: center
-	padding-top: 20px 
+	padding: 20px 0
 	span
 		display: inline-block
 		+s(page)
@@ -272,7 +273,7 @@
 	.cycle-pager-active
 		+s(pageactive)
 .mainslider_news
-	margin-bottom: 30px
+	padding-bottom: 30px
 	.entry
 		padding: 4%
 		width: 100% - 8%
@@ -518,4 +519,15 @@
 				&:after
 					display: block
 
-
+.is-fixed-submenu
+	.submenu
+		position: fixed
+		width: 150px
+		top: 0
+		left: 50%
+		z-index: 500
+		margin-left: -600px
+		+r(step2)
+			position: static
+			width: 100%
+			margin-left: 0
