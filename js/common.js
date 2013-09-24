@@ -114,7 +114,7 @@ $(document).ready(function() {
 	});
 	fixed_subnav();
 
-	$('.ImageMenu ul').kwicks({max: 800, duration: 300, easing: 'easeOutQuad'});
+	$('.ImageMenu ul').kwicks({max: 900, duration: 300, easing: 'easeOutQuad'});
     $('div.ImageMenu ul li a').hover(
     function () {
        $(this).children('span').stop(true,true).fadeIn(300);},
