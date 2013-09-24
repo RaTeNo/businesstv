@@ -13,11 +13,17 @@
 	line-height: 1
 .article__title-2
 	font-size: 24px
-
+.article__under-title
+	margin-bottom: 9px
+	font-size: 20px
+	+med
 .article__meta
 	color: #7f0102
 	font-size: 14px
 	+reg-condom
+.article__meta_top
+	display: block
+	margin: -10px 0 20px
 .article__img
 	margin: 20px 0 30px -40px 
 	overflow: hidden
@@ -27,6 +33,11 @@
 		display: block
 		width: 100%
 		height: auto
+	span
+		display: block
+		margin-top: 11px
+		font-size: 14px
+		color: #777 
 .article__content
 	font-size: 16px
 	color: #333
@@ -41,6 +52,14 @@
 	strong, b
 		+med
 		font-weight: normal
+	h3
+		margin: 40px 0 10px 
+		font-size: 30px
+		+med
+		line-height: 1.2
+	img
+		float: left
+		margin: 0 40px 10px -40px 
 
 .rate
 	font-size: 14px
@@ -190,7 +209,10 @@
 	border-bottom: 3px solid #bb141a
 	+r(step5)
 		margin-left: -20px
-		
+.defin_big
+	font-size: 24px
+	border-width: 4px 
+
 .smallentry_sidebar
 	margin-bottom: 19px
 	overflow: hidden

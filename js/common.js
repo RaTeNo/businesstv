@@ -113,13 +113,15 @@ $(document).ready(function() {
 		fixed_subnav();
 	});
 	fixed_subnav();
-
-	$('.ImageMenu ul').kwicks({max: 900, duration: 300, easing: 'easeOutQuad'});
-    $('div.ImageMenu ul li a').hover(
-    function () {
-       $(this).children('span').stop(true,true).fadeIn(300);},
-    function () {
-     $(this).children('span').stop(true,true).fadeOut(300);});
+	if ($('.ImageMenu').length > 0) {
+		$('.ImageMenu ul').kwicks({max: 900, duration: 300, easing: 'easeOutQuad'});
+	    $('div.ImageMenu ul li a').hover(
+	    function () {
+	       $(this).children('span').stop(true,true).fadeIn(300);},
+	    function () {
+	     $(this).children('span').stop(true,true).fadeOut(300);});
+	}
+	
 
 	//begin debug width
 	$('.page').after('<div class="debug"></div>')
