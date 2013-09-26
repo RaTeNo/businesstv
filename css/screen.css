@@ -658,10 +658,13 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 @media only screen and (max-width: 700px) { .tv-program__main ul { float: none; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-left: 0; border-left: 0; } }
 .tv-program__main ul:first-child { margin-left: 0; border-left: 0; }
 .tv-program__main li { position: relative; padding: 7px 0 7px 25%; font-size: 18px; cursor: pointer; }
+.tv-program__main li a { color: black; text-decoration: none; display: block; }
 .tv-program__main li:hover { background: #e9e9e9; }
 .tv-program__main li.is-active { background: #3a3a3a; color: white; font-family: "pfmedium", "arial narrow", sans-serif; }
 .tv-program__main li.is-active span { font-family: "pfregular", arial, sans-serif; }
 .tv-program__main li.is-inactive { color: #717171; }
+.tv-program__main li.is-nolink { cursor: default; }
+.tv-program__main li.is-nolink:hover { background: white; }
 .tv-program__main span { position: absolute; top: 9px; left: 8%; font-size: 14px; }
 .tv-program__main i { display: inline-block; margin-left: 10px; font-size: 8px; font-style: normal; text-transform: uppercase; }
 

@@ -382,6 +382,10 @@
 		padding: 7px 0 7px 25%
 		font-size: 18px
 		cursor: pointer
+		a
+			color: #000
+			text-decoration: none 
+			display: block
 		&:hover
 			background: #e9e9e9
 		&.is-active
@@ -392,6 +396,10 @@
 				+reg
 		&.is-inactive
 			color: #717171 
+		&.is-nolink
+			cursor: default
+			&:hover
+				background: #fff 
 	span
 		position: absolute
 		top: 9px
