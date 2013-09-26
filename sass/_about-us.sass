@@ -87,7 +87,8 @@
     +med
     font-size: 16px
 .worker__email
-    margin-right: -60px 
+    margin-right: -25px 
+    margin-left: -25px 
     overflow: hidden
     -ms-text-overflow: ellipsis
     text-overflow: ellipsis
@@ -95,8 +96,32 @@
         color: #bb141a 
         
 .wrapper_presenter
+    text-align: left
+    overflow: visible
     .worker-wrap
         margin-right: -70px
+        margin-right: 0 
+        overflow: visible
+        +r(step5)
+            padding-bottom: 20px 
+    .worker
+        display: inline-block
+        float: none
+        width: 24%
+        text-align: center
+        margin-right: 0  
+        +r(step1)
+            width: 33%
+        +r(step3) 
+            width: 47%
+        +r(step5)
+            width: 47%
+        +r(steplast)
+            width: auto 
+            display: block
+    .worker__img
+        width: 140px 
+        display: inline-block
 
 .worker_round
     text-align: center
