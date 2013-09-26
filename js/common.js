@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	if($(".tv-program__top").length>0){
+		$(".tv-program__top").scrollable();
+		var ap = $(".tv-program__top").data('scrollable');
+  		
+  		
+
+  		ap.onSeek(function(event, index) {
+  			cornum = Math.floor($('.tv-program').width()/100);
+		    if (this.getIndex() >= this.getSize() - cornum) {    
+		      $('.move__next').addClass('disabled');
+		    }
+		  });
+	}
 	$('.header__toggle').click(function () {
 		$('body').toggleClass("is-withmenu");
 	});

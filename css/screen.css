@@ -630,11 +630,15 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .move__prev { left: 0; }
 .move__prev i { background: url('../img/icons-sa1590e75af.png') 0 -1077px no-repeat; width: 7px; height: 11px; }
+.move__prev.disabled { opacity: 0.3; cursor: default; }
 
 .move__next { right: 0; }
 .move__next i { background: url('../img/icons-sa1590e75af.png') 0 -1098px no-repeat; width: 7px; height: 11px; }
+.move__next.disabled { display: none; }
 
-.move__main { position: absolute; left: 28px; right: 28px; top: 0; height: 45px; width: 5000px; }
+.scrollable { position: absolute; left: 28px; right: 28px; }
+
+.move__main { position: absolute; left: 0; top: 0; height: 45px; width: 5000px; }
 
 .tv-program__days-wrap { font-size: 0; }
 

@@ -283,14 +283,22 @@
 	left: 0
 	i
 		+s(arr3)
+	&.disabled
+		opacity: .3
+		cursor: default 
 .move__next
 	right: 0
 	i
 		+s(arr2)
-.move__main
+	&.disabled
+		display: none
+.scrollable
 	position: absolute
 	left: 28px
 	right: 28px
+.move__main
+	position: absolute
+	left: 0 
 	top: 0
 	height: 45px
 	width: 5000px
