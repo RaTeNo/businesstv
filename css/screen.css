@@ -706,7 +706,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .addcomment_gray { background: #e9eaea; clear: both; }
 
-.media-section { overflow: hidden; margin: 46px 0 0; }
+.media-section { overflow: hidden; margin: 46px 0 0; clear: left; }
 .media-section .videos { margin-right: -4%; }
 .media-section .video { width: 29.5%; margin: 0 3.4% 3.4% 0; }
 @media only screen and (max-width: 700px) { .media-section .video { width: 46.5%; } }
@@ -943,7 +943,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .wrapper_worker { margin-left: -40px; }
 
-.worker { float: left; margin: 3.5% 3.8% 0 0; width: 140px; overflow: hidden; color: #333333; font-size: 14px; }
+.worker { float: left; margin: 3.5% 3.8% 0 0; width: 140px; color: #333333; font-size: 14px; }
 .worker a { text-decoration: none; }
 .worker a:hover { text-decoration: underline; }
 
@@ -953,6 +953,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .worker__name { display: block; color: #333333; font-family: "pfmedium", "arial narrow", sans-serif; font-size: 16px; }
 
+.worker__email { margin-right: -60px; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; }
 .worker__email a { color: #bb141a; }
 
 .wrapper_presenter .worker-wrap { margin-right: -70px; }
