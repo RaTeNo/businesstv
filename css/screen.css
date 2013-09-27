@@ -299,7 +299,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .l2.l2_alt .l-col3 { margin-top: -75px; }
 @media only screen and (max-width: 700px) { .l2.l2_alt .l-col3 { width: 100%; display: block; float: none; margin: 0; clear: both; padding-top: 20px; } }
 
-.l3 { width: 100%; display: inline-block; }
+.l3 { width: 100%; display: inline-block; position: relative; }
 .l3 .l-col1 { float: left; width: 73%; }
 @media only screen and (max-width: 700px) { .l3 .l-col1 { float: none; width: 100%; } }
 .l3 .l-col2 { width: 21.5%; float: right; }
@@ -486,7 +486,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .radio input { z-index: 2; opacity: 0; }
 .radio input:checked + i:after { display: block; }
 
-.is-fixed-submenu .submenu { position: fixed; width: 150px; top: 0; left: 50%; z-index: 500; margin-left: -600px; }
+.is-fixed-submenu .submenu { position: fixed; top: 0; left: 50%; z-index: 500; margin-left: -600px; }
 @media only screen and (max-width: 1000px) { .is-fixed-submenu .submenu { position: static; width: 100%; margin-left: 0; } }
 
 .addcomment { padding: 8px 13px; background: #f0f2f2; font-family: "pfmedium", "arial narrow", sans-serif; font-size: 18px; color: #333333; margin: 20px 0; }
@@ -759,8 +759,11 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 
 .upload__title, .upload__link { display: inline-block; vertical-align: middle; }
 
-.submenu_small { width: 115px; float: left; }
-@media only screen and (max-width: 1000px) { .submenu_small { float: none; width: 100%; } }
+.submenu__wrap { width: 115px; float: left; position: relative; min-height: 100px; }
+@media only screen and (max-width: 1000px) { .submenu__wrap { float: none; width: 100%; } }
+
+.submenu_small { position: absolute; width: 115px; top: 0; left: 0; }
+@media only screen and (max-width: 1000px) { .submenu_small { position: static; width: auto; } }
 .submenu_small a { padding-left: 30px; }
 @media only screen and (max-width: 1000px) { .submenu_small a { padding-left: 10px; } }
 

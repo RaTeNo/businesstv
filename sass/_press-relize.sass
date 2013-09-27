@@ -16,13 +16,22 @@
 	vertical-align: middle
 .upload__link
 	@extend %redbutton
-
-.submenu_small
+.submenu__wrap
 	width: 115px
 	float: left
+	position: relative
+	min-height: 100px 
 	+r(step2)
 		float: none
 		width: 100%
+.submenu_small
+	position: absolute
+	width: 115px 
+	top: 0
+	left: 0  
+	+r(step2)
+		position: static
+		width: auto 
 	a
 		padding-left: 30px
 		+r(step2)

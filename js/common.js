@@ -123,7 +123,8 @@ $(document).ready(function() {
 	}
 	function fixed_subnav() {
 		if ($(".submenu").length > 0) {
-			var menu_pos = $(".submenu").parent().position().top;
+			var menu_pos = $(".submenu__wrap").offset().top;
+			//alert(menu_pos);
 		}
 		
 		if ($(window).scrollTop() >= menu_pos) {
