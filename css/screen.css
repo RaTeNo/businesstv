@@ -580,6 +580,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .b_digit .digit { background: whitesmoke; padding: 4px; text-align: center; font-size: 14px; line-height: 1.3; padding-bottom: 12px; }
 .b_digit .digit__number { display: block; font-size: 82px; font-family: "Times New Roman", serif; line-height: 1; }
 
+.vote { margin-left: 5px; }
 .vote .vote__button { margin-left: 29px; }
 .vote .vote__title { font-size: 16px; font-family: "pfmedium", "arial narrow", sans-serif; line-height: 1.3; margin-bottom: 10px; }
 .vote .vote__options { list-style: none; margin-bottom: 20px; font-size: 14px; }
@@ -675,6 +676,11 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .poll .poll__bottom .poll__viewresults { text-decoration: none; color: #bb141a; font-size: 16px; }
 .poll .poll__bottom .poll__viewresults:hover { text-decoration: underline; }
 .poll .poll__whole { margin-top: 40px; font-size: 16px; color: #666666; text-align: center; }
+.poll.poll_small .poll__result { margin-bottom: 13px; }
+.poll.poll_small .poll__result strong { font-size: 14px; margin-bottom: 4px; line-height: 1.2; }
+.poll.poll_small .poll__number { font-size: 14px; }
+.poll.poll_small .poll__results { width: auto; margin-right: 30px; }
+.poll.poll_small .poll__whole { font-size: 14px; margin-top: 14px; }
 
 .bigdigit { text-align: center; color: #333333; }
 .bigdigit .bigdigit__number { font-size: 123px; font-family: "pfmedium", "arial narrow", sans-serif; margin-bottom: 20px; }
@@ -1194,7 +1200,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .vacancy__title { margin-bottom: 20px; font-family: "pfmedium", "arial narrow", sans-serif; color: #910709; font-size: 18px; }
 
 .vacancy__form { float: right; width: 40%; padding: 4% 5%; background: whitesmoke; font-size: 16px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-@media only screen and (max-width: 1000px) { .vacancy__form { position: relative; width: 60%; left: 50%; right: auto; margin-left: -20%; } }
+@media only screen and (max-width: 1000px) { .vacancy__form { position: relative; float: none; width: 60%; left: 50%; right: auto; margin-left: -20%; } }
 @media only screen and (max-width: 830px) { .vacancy__form { width: 100%; left: 0; margin-left: 0; } }
 .vacancy__form p { font-size: 24px; }
 
