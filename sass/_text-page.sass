@@ -243,3 +243,71 @@
 		+med
 		+r(step3)
 			font-size: 12px
+.loginform
+	background: #F0F2F2
+	padding: 13px  13px 30px 13px
+	.loginform__title
+		font-size: 18px 
+		color: #333 
+		margin-bottom: 12px 
+		+med
+	.loginform__input
+		position: relative
+		background: #fff 
+		display: inline-block
+		width: 330px 
+		margin-right: 10px 
+		vertical-align: middle
+		input
+			background: #fff 
+		&.is-correct
+			i
+				position: absolute
+				right: 10px 
+				top: 10px 
+				+s(correct)
+				display: inline-block
+	.loginform__row
+		display: inline-block
+		width: 100%
+		margin-bottom: 14px 
+		label
+			float: left
+			width: 93px 
+			color: #333 
+			font-size: 16px 
+			padding-top: 4px 
+	.loginform__forgot
+		font-size: 14px 
+		color: #982a2b 
+		text-decoration: none
+		position: relative
+		top: 1px 
+		display: inline-block
+		vertical-align: middle
+	.loginform__enter
+		.button
+			@extend %redbutton
+			margin-left: 93px 
+	.loginform__register
+		font-size: 14px 
+		color: #333 
+		display: inline-block
+		margin-left: 10px 
+		a
+			text-decoration: none
+	.loginform__socials
+		font-size: 14px 
+		color: #333 
+		margin-top: 31px 
+		span
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px 
+		a
+			display: inline-block
+			vertical-align: middle
+			margin-right: 1px 
+		@each $s in fb,tw,gp,vk,in
+			.loginform__#{$s}
+				+s(s-#{$s})
