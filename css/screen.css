@@ -1111,7 +1111,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .loginform .loginform__enter .button { margin-left: 93px; }
 .loginform .loginform__register { font-size: 14px; color: #333333; display: inline-block; margin-left: 10px; }
 .loginform .loginform__register a { text-decoration: none; }
-.loginform .loginform__socials { font-size: 14px; color: #333333; margin-top: 31px; }
+.loginform .loginform__socials { font-size: 14px; color: #333333; margin-top: 31px; margin-left: 93px; }
 .loginform .loginform__socials span { display: inline-block; vertical-align: middle; margin-right: 10px; }
 .loginform .loginform__socials a { display: inline-block; vertical-align: middle; margin-right: 1px; }
 .loginform .loginform__socials .loginform__fb { background: url('../img/icons-sb7d8232bb3.png') 0 -2429px no-repeat; width: 26px; height: 26px; }
