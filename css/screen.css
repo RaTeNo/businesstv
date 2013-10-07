@@ -1171,7 +1171,7 @@ body.is-channel .top .top__nav a.is-active, body.is-channel .top .top__nav a.is-
 .wrapper_presenter { text-align: left; overflow: visible; }
 .wrapper_presenter .worker-wrap { margin-right: -70px; margin-right: 0; overflow: visible; }
 @media only screen and (max-width: 700px) { .wrapper_presenter .worker-wrap { padding-bottom: 20px; } }
-.wrapper_presenter .worker { display: inline-block; float: none; width: 24%; text-align: center; margin-right: 0; }
+.wrapper_presenter .worker { display: inline-block; vertical-align: top; float: none; width: 24%; text-align: center; margin-right: 0; }
 @media only screen and (max-width: 1200px) { .wrapper_presenter .worker { width: 33%; } }
 @media only screen and (max-width: 940px) { .wrapper_presenter .worker { width: 47%; } }
 @media only screen and (max-width: 700px) { .wrapper_presenter .worker { width: 47%; } }
