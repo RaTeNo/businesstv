@@ -1,0 +1,156 @@
+.prof-page
+	font-size: 0
+.prof-page__item1,
+.prof-page__item3
+	display: inline-block
+	vertical-align: top
+	width: 48%
+	margin-right: 8%
+	+r(step6)
+		display: block
+		margin-right: 0
+		width: 100%
+.prof-page__item2,
+.prof-page__item4
+	display: inline-block
+	vertical-align: top
+	width: 44%
+	+r(step6)
+		display: block
+		width: 100%
+.prof-page__item2
+	margin: 60px 0 44px
+.profile
+	@extend %clr
+	+reg
+	color: #777
+	font-size: 16px 
+	span
+		color: #333 
+.profile__img
+	float: left
+	margin-right: 20px
+	img
+		display: block
+.edit-link
+	font-size: 12px
+	color: #910709 
+	clear: both
+	text-decoration: none
+	i
+		display: inline-block
+		margin-right: 3px
+		+s(edit)
+.profile__main
+	overflow: hidden
+	margin-bottom: 14px
+.profile__name
+	font-size: 24px
+	color: #333 
+	
+.stuff
+	overflow: hidden
+	margin-bottom: 30px
+.stuff__img
+	float: left
+	margin-right: 11px
+.stuff__main
+	overflow: hidden
+.stuff__title
+	font-size: 14px
+	+reg
+	color: #333
+	text-decoration: none 
+.stuff__date
+	color: #c0c0c0 
+	font-size: 12px   
+
+.comm-simple
+	font-size: 14px
+	margin-bottom: 38px
+.comm-simple__title
+	margin-bottom: 13px
+	color: #777
+.comm-simple__meta	
+	display: inline-block
+	margin-left: 10px
+	font-size: 12px
+	color: #c0c0c0 
+
+.connect-wrap__title
+	margin-bottom: 10px
+	font-size: 14px
+	color: #777
+.connect
+	display: block
+	margin: 5px 0 
+	width: 170px
+	height: 26px
+	line-height: 26px
+	+border-box
+	font-size: 14px
+	color: #fff
+	text-decoration: none 
+	&:hover
+		+opacity(.9)
+	span
+		display: inline-block
+		text-align: center
+	i
+		display: inline-block
+		vertical-align: middle
+	span
+		width: 26px
+		margin-right: 7px
+		border-right: 1px solid rgba(255,255,255,.2) 
+	.is-connected
+.connect_in
+	background: #006599
+	span
+		background: #006599
+	i
+		+s(con-in) 
+.connect_gp
+	background: #d94e37
+	span
+		background: #d94e37
+	i
+		+s(con-gp) 
+.connect_vk
+	background: #366396
+	span
+		background: #366396
+	i
+		+s(con-vk) 
+.connect_sk
+	background: #37bef3
+	span
+		background: #37bef3
+	i
+		+s(con-sk) 
+.connect_fb
+	background: #004b96
+	span
+		background: #004b96
+	i
+		+s(con-fb) 
+.connect_tw
+	background: #00acee
+	span
+		background: #00acee
+	i
+		+s(con-tw) 
+.connected
+	margin-top: 24px
+	a
+		color: #777
+		display: inline-block
+		text-decoration: none 
+	.connect
+		background: none
+		width: 160px
+		display: inline-block
+		+med
+		color: #333 
+		&:hover
+			+opacity(1)

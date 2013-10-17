@@ -20,7 +20,7 @@
 	width: 115px
 	float: left
 	position: relative
-	min-height: 100px 
+	min-height: 1px
 	+r(step2)
 		float: none
 		width: 100%
@@ -172,6 +172,8 @@
 	margin-bottom: 14px
 	padding: 8px 
 	background: #f8f8f8 
+	+r(steplast)
+		text-align: center
 .write__in
 	position: relative
 	padding: 19px 14px 19px 71px 
@@ -193,12 +195,23 @@
 			left: auto
 			margin-top: -17px 
 			+box-shadow(none)
+		+r(steplast)
+			position: static
+			margin: 10px 0 0
+			&:active
+				margin-top: 10px
 .write__info
 	margin-right: 180px
 	line-height: 1
 	color: #696969
 	font-size: 14px 
 	+med-condom  
+	+r(step6)
+		font-size: 12px
+		margin-right: 100px
+	+r(steplast)
+		margin-right: 0
+		text-align: left
 
 .btn-big
 	padding: 0 13px 
@@ -223,8 +236,18 @@
 	margin-right: 3.5%
 	overflow: hidden
 	+r(step6)
-		width: 41.8%
+		width: 45.8%
 		margin: 0 4% 4% 0
+		img
+			width: 100%
+			height: auto
+	+r(steplast)
+		display: block
+		width: 80%
+		float: none
+		margin: 0 auto 20px 
+	+r(step7)
+		width: 95%
 	// +r(step7)
 	// 	float: none
 	// 	width: 95%

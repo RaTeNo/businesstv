@@ -6,7 +6,7 @@ $step4: 830px;
 $step5: 700px;
 $step6: 550px;
 $steplast: 401px;
-$step7: 480px;
+$step7: 320px;
 @mixin r($media:'step1') {
 	@if $media == step1 {
 		// narrower than $width
@@ -40,7 +40,7 @@ $step7: 480px;
 		// wider than $width
 		@media only screen and (max-width: $step7) { @content; }
 	}
-}
+}  
 // retina bg
 @mixin retina{
 	@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {

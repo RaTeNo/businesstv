@@ -599,8 +599,62 @@
 	i
 		margin-right: 9px
 		display: inline-block
-		
+.title-icon_mod
+	margin-left: -9.5%
+	color: #333 
+	+r(step5)
+		margin-left: 0	
+
 .icon-clock-big
 	+s(clock-big)
 .icon-eye
 	+s(eye)
+.icon-profile
+	+s(profileblack)
+.icon-downl
+	+s(downl)
+.icon-comm
+	+s(comm)
+
+.pagin
+	text-align: center
+	@extend %clr
+	a, span
+		display: inline-block
+	a
+		vertical-align: middle
+		width: 28px
+		height: 24px
+		font-size: 16px
+		text-align: center
+		line-height: 24px
+		color: #333
+		text-decoration: none 
+		&.is-active
+			background: #b3b3b3 
+			color: #fff 
+			+med
+	.pagin__prev,
+	.pagin__next
+		width: auto
+		+r(step6)
+			margin: 15px 10px
+			display: block
+			width: 95px
+.pagin__prev,
+.pagin__next  
+	i
+		display: inline-block
+		vertical-align: middle
+.pagin__prev
+	margin-right: 5%
+	i
+		margin-right: 10px
+		+s(arr7)
+.pagin__next
+	margin-left: 5%
+	+r(step6)
+		float: right
+	i
+		margin-left: 10px
+		+s(arr8)
