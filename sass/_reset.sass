@@ -125,7 +125,9 @@ button::-moz-focus-inner
 input[type="submit"]::-moz-focus-inner
 	padding: 0
 	border: 0
-
+input, textarea, select,button,
+h1,h2,h3,h4,h5,h6,a,span,a:focus 
+	outline: none
 body
 	font:
 		family: Arial,sans-serif
@@ -135,7 +137,9 @@ body
 	background: #F5F5F5
 	color: #222
 	+reg
-
++iphone
+	*	
+		-webkit-text-size-adjust: none
 // resets
 a img,fieldset
 	border: none

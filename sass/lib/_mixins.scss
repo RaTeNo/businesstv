@@ -6,6 +6,7 @@ $step4: 830px;
 $step5: 700px;
 $step6: 550px;
 $steplast: 401px;
+$step7: 480px;
 @mixin r($media:'step1') {
 	@if $media == step1 {
 		// narrower than $width
@@ -34,6 +35,10 @@ $steplast: 401px;
 	@else if $media == steplast {
 		// wider than $width
 		@media only screen and (max-width: $steplast) { @content; }
+	}
+	@else if $media == step7 {
+		// wider than $width
+		@media only screen and (max-width: $step7) { @content; }
 	}
 }
 // retina bg

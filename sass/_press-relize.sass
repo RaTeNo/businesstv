@@ -39,6 +39,19 @@
 .pr-wrap
 	overflow: hidden
 	margin-bottom: 20px
+.pr-wrap_absolute
+	overflow: visible
+	@extend %clr
+	list-style: none
+	.pr
+		padding: 18px 0 18px 4.3% 
+	.pr__img
+		position: absolute
+		left: 4.3%
+		top: 20px
+	.pr__right
+		margin-left: 80px
+		overflow: visible
 .pr
 	position: relative
 	+border-box
@@ -61,11 +74,14 @@
 	.download
 		margin-top: 18px
 		text-align: left
+	.comments,
+	.views
+		float: right
+		+opacity(.7)
 .pr__right_mod
 	text-align: left
 	padding-right: 10%
 	+r(step5)
-		padding-right: 2%
 .pr__img
 	float: left
 	margin-right: 18px
@@ -104,8 +120,28 @@
 		font-size: 14px
 .pr__meta
 	color: #7f0102
+	margin-right: 17px
 	font-size: 12px 
 	+med
+.pr__author
+	position: relative
+	display: inline-block
+	padding-bottom: 10px
+	a
+		color: #797979 
+		text-decoration: none
+	i
+		display: inline-block
+		margin-right: 5px
+		+s(user)
+		font-size: 12px
+	&:hover
+		.tip
+			display: block
+	.tip
+		top: 21px
+		left: -12px
+		width: 246px  
 .download
 	display: inline-block
 	position: relative
@@ -131,3 +167,120 @@
 	+s(doc_pdf)
 .icon-ppt
 	+s(doc_ppt)
+
+.write
+	margin-bottom: 14px
+	padding: 8px 
+	background: #f8f8f8 
+.write__in
+	position: relative
+	padding: 19px 14px 19px 71px 
+	border: 2px dashed #dbdbdb
+	+border-radius(10px)
+	font-size: 0
+	&:before
+		content: ""
+		position: absolute
+		left: 18px
+		top: 14px
+		+s(write) 
+	.btn-red
+		position: absolute
+		top: 50%
+		right: 14px
+		margin-top: -18px
+		&:active
+			left: auto
+			margin-top: -17px 
+			+box-shadow(none)
+.write__info
+	margin-right: 180px
+	line-height: 1
+	color: #696969
+	font-size: 14px 
+	+med-condom  
+
+.btn-big
+	padding: 0 13px 
+	height: 36px
+	line-height: 36px
+	font-size: 16px
+
+.btn-gray-shadow
+	+box-shadow(1px 2px 0 #c1c1c1)
+	&:hover
+		+box-shadow(1px 2px 0 #c1c1c1)
+		
+.items-wrap
+	margin-right: -6%
+	overflow: hidden
+	+r(step7)
+		margin-right: 0
+.item
+	position: relative
+	float: left
+	width: 29%
+	margin-right: 3.5%
+	overflow: hidden
+	+r(step6)
+		width: 41.8%
+		margin: 0 4% 4% 0
+	// +r(step7)
+	// 	float: none
+	// 	width: 95%
+	// 	margin: 0 auto 
+	img
+		display: block
+	&:hover
+		.item__main
+			padding: 15px 2px 15px 44px 
+			+r(step2)
+				padding: 6px 2px 6px 35px 
+			&:before
+				top: 15px
+		.item__title-meta
+			display: none
+		.item__meta
+			display: block 
+.item__main
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 6px 2px 6px 44px 
+	background: rgba(0,24,56,.8) 
+	color: #fff 
+	+r(step2)
+		padding-left: 35px
+	&:before
+		content: ""
+		position: absolute
+		top: 8px
+		left: 8px
+		+s(write-small) 
+.item__title
+	+med-condom
+	font-size: 14px
+	overflow: hidden
+.item__title-meta
+	float: right
+	color: #c1c1c1 
+	font-size: 12px
+	margin: 3px 5px 0 10px
+
+.item__meta
+	display: none 
+	margin-top: 10px
+	font-size: 12px
+	color: #c1c1c1 
+	+r(step2)
+		margin-top: 5px
+	p
+		margin-bottom: 7px
+		+r(step2)
+			margin-top: 3px
+	span
+		color: #fff
+	.views, .comments
+		display: inline-block 
+		margin-right: 0

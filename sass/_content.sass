@@ -555,3 +555,52 @@
 			position: static
 			width: 100%
 			margin-left: 0
+			
+.tip
+	display: none
+	position: absolute
+	padding: 11px 
+	background: #fff 
+	border: 1px solid #b5b5b5
+	+border-box
+	z-index: 100
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		width: 0
+		height: 0
+		border-style: solid
+	&:before
+		z-index: 2
+		left: 11px
+		top: -6px
+		border-width: 0 6px 6px 6px
+		border-color: transparent transparent #fff transparent
+	&:after
+		left: 10px
+		top: -7px
+		border-width: 0 7px 7px 7px
+		border-color: transparent transparent #b5b5b5 transparent
+.tip__img
+	float: left
+	margin-right: 12px
+.tip__info
+	overflow: hidden
+	font-size: 12px
+	color: #797979 
+	span
+		color: #000 
+		
+.title-icon
+	margin: 14px 0 
+	font-size: 18px
+	+med_condom
+	i
+		margin-right: 9px
+		display: inline-block
+		
+.icon-clock-big
+	+s(clock-big)
+.icon-eye
+	+s(eye)
