@@ -1,7 +1,7 @@
 // experts
 
 .experts
-	@extend %clr
+	font-size: 0
 	list-style-type: none
 	margin-left: -6%
 	+r(step1)
@@ -11,7 +11,8 @@
 	+r(step5)
 		margin-left: -6%		
 .experts__item
-	float: left
+	display: inline-block
+	vertical-align: top
 	width: 27.3%
 	margin-left: 6%
 	margin-bottom: 30px
@@ -29,6 +30,7 @@
 	img
 		width: 100%
 		height: 100%
+		display: block
 .experts__text		
 	position: absolute
 	bottom: 0
