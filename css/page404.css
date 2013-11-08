@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	overflow: scroll;
+	background: #FFF;
+	}
+body {
+	background: #FFF;
+	}
+.body {
+	max-width: 1284px;
+	}
+.logo__error {
+	padding-top: 20px;
+	}
+.logo__error {
+	width: 114px;
+	height: 141px;
+	display: block;
+	margin: 0 auto;}
+.page__error {
+	max-width: 650px;
+	margin: 120px auto 0;
+	}
+@media only screen and (max-width: 650px) {
+	 .page__error { margin: 0 10px;} 
+	 }
+.page__error img {
+	float: left;
+	margin: 10px 50px 0 0;
+	}
+.page__error h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	}
+.page__error_none {
+	padding: 20px 0 10px;
+	}
+.page__error p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	}
+.page__error-home {
+	display: inline-block;
+	color: #de1a22;
+	text-decoration: none;
+	}
+.page__error span {
+	color: #de1a22;
+	}
+.page__error-searsh input {
+	padding: 0;
+	margin: 20px 0 0;
+	width: 250px;
+	height: 25px;
+	background: #f0f0f0;
+	}
+.page__error-searsh input {
+	font-style: italic;
+	padding-left: 10px;
+	}
+.page__error-searsh i {
+	background-image: url(../img/searsh.png);
+	padding: 0;
+	margin-left: -29px;
+	margin-top: 20px;
+	height: 27px;
+	width: 27px;
+	position: absolute;
+	float: left;
+	}
+.sidenav__error {
+	margin-top: 80px;
+	}
+.sidenav__error-nav {
+	list-style: none;
+	max-width: 600px;
+	height: 20px;
+	margin: 0 auto;
+	}
+.sidenav__error-nav li {
+	padding: 20px;
+	float: left;
+	display: block;
+	text-decoration: none;
+	}
+.sidenav__error-nav li a {
+	color: #de1a22;
+	font-size: 14px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
